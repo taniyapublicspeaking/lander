@@ -1,0 +1,296 @@
+/* =========================================================
+   HERO SVG
+========================================================= */
+
+.hero-decoration {
+    position: absolute;
+
+    width: 300px;
+    height: 400px;
+
+    pointer-events: none;
+}
+
+.hero-decoration-left {
+    left: -80px;
+    bottom: -40px;
+}
+
+.hero-decoration-right {
+    right: -80px;
+    top: 100px;
+}
+
+.svg-circle {
+    fill: #dbeafe;
+    opacity: 0.8;
+}
+
+.svg-circle-small {
+    fill: #fed7aa;
+}
+
+.svg-line {
+    fill: none;
+
+    stroke: #2563eb;
+    stroke-width: 5;
+
+    stroke-linecap: round;
+
+    opacity: 0.45;
+}
+
+.svg-line-secondary {
+    stroke: #f97316;
+    opacity: 0.35;
+}
+
+.svg-diamond {
+    fill: #ffedd5;
+    stroke: #f97316;
+    stroke-width: 4;
+}
+
+.svg-ring {
+    fill: none;
+
+    stroke: #dbeafe;
+    stroke-width: 20;
+
+    opacity: 0.8;
+}
+
+
+/* =========================================================
+   HERO ILLUSTRATION
+========================================================= */
+
+.svg-bg-circle {
+    fill: #dbeafe;
+}
+
+.svg-person {
+    fill: #2563eb;
+}
+
+.svg-face {
+    fill: #fed7aa;
+}
+
+.svg-hair {
+    fill: none;
+
+    stroke: #172554;
+    stroke-width: 18;
+
+    stroke-linecap: round;
+}
+
+.svg-eye {
+    fill: #172554;
+}
+
+.svg-smile {
+    fill: none;
+
+    stroke: #172554;
+    stroke-width: 5;
+
+    stroke-linecap: round;
+}
+
+.svg-speech {
+    fill: #ffffff;
+
+    stroke: #f97316;
+    stroke-width: 5;
+}
+
+.svg-text {
+    fill: #172554;
+
+    font-family:
+        Inter,
+        Arial,
+        sans-serif;
+
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.svg-star {
+    fill: #facc15;
+}
+
+.svg-star-secondary {
+    fill: #f97316;
+}
+
+
+/* =========================================================
+   LEARNING ICONS
+========================================================= */
+
+.icon-bg {
+    fill: #dbeafe;
+}
+
+.icon-fill {
+    fill: #2563eb;
+}
+
+.icon-stroke {
+    fill: none;
+
+    stroke: #172554;
+    stroke-width: 5;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.icon-light-stroke {
+    fill: none;
+
+    stroke: #ffffff;
+    stroke-width: 4;
+
+    stroke-linecap: round;
+}
+
+
+/* =========================================================
+   PROGRAMME SVG
+========================================================= */
+
+.programme-circle {
+    fill: #ffffff;
+    stroke: #dbeafe;
+    stroke-width: 12;
+}
+
+.book-left,
+.book-right {
+    fill: #2563eb;
+}
+
+.book-middle {
+    fill: none;
+
+    stroke: #172554;
+    stroke-width: 5;
+}
+
+.programme-star {
+    fill: #facc15;
+}
+
+.programme-dot {
+    fill: #f97316;
+}
+
+.programme-dot-small {
+    fill: #2563eb;
+}
+
+
+/* =========================================================
+   EDUCATOR SVG
+========================================================= */
+
+.educator-bg {
+    fill: #dbeafe;
+}
+
+.educator-head {
+    fill: #fed7aa;
+}
+
+.educator-body {
+    fill: #2563eb;
+}
+
+
+/* =========================================================
+   LOCATION SVG
+========================================================= */
+
+.map-svg {
+    width: 100%;
+    max-width: 450px;
+}
+
+.map-road {
+    fill: none;
+
+    stroke: rgba(255, 255, 255, 0.22);
+    stroke-width: 10;
+
+    stroke-linecap: round;
+}
+
+.map-pin {
+    fill: #f97316;
+    stroke: #ffffff;
+    stroke-width: 6;
+}
+
+.map-pin-center {
+    fill: #ffffff;
+}
+
+
+/* =========================================================
+   REGISTRATION SVG
+========================================================= */
+
+.cta-circle {
+    fill: #ffffff;
+    opacity: 0.8;
+}
+
+.cta-check {
+    fill: none;
+
+    stroke: #f97316;
+    stroke-width: 12;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+/* =========================================================
+   CLOSING SVG
+========================================================= */
+
+.closing-line {
+    fill: none;
+
+    stroke: #facc15;
+    stroke-width: 5;
+
+    stroke-linecap: round;
+}
+
+.closing-dot {
+    fill: #ffffff;
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+        animation: none !important;
+    }
+
+}
