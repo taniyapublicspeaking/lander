@@ -305,6 +305,32 @@
     fill: #ffffff;
 }
 
+/* =========================================================
+   DECORATIVE CARTOON SVG SHAPES
+========================================================= */
+
+.decoration-dcss {
+    position: absolute;
+    pointer-events: none;
+}
+
+.microphone-dcss {
+    top: 40px;
+    left: 30px;
+    transform: rotate(-5deg);
+}
+
+.books-dcss {
+    bottom: 20px;
+    right: 40px;
+}
+
+.pencil-dcss {
+    top: 100px;
+    right: 20px;
+    transform: rotate(15deg);
+}
+
 
 /* =========================================================
    ACCESSIBILITY
