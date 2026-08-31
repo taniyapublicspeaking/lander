@@ -1,0 +1,21 @@
+.decoration {
+    position: absolute;
+    pointer-events: none;
+}
+
+.microphone {
+    top: 40px;
+    left: 30px;
+    transform: rotate(-5deg);
+}
+
+.books {
+    bottom: 20px;
+    right: 40px;
+}
+
+.pencil {
+    top: 100px;
+    right: 20px;
+    transform: rotate(15deg);
+}
