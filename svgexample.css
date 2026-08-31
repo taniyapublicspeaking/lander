@@ -59,3 +59,17 @@
         opacity: 0;
     }
 }
+
+.contact-icon {
+    color: #25D366;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.contact-icon:hover {
+    transform: scale(1.1);
+}
+
+
