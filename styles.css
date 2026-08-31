@@ -721,6 +721,36 @@ p {
     color: var(--navy);
 }
 
+/* =========================================================
+   MOBILE ICON
+========================================================= */
+
+.contact-icon-mobile {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #007bff;
+}
+
+.contact-icon-mobile:hover {
+    transform: scale(1.1);
+}
+
+/* =========================================================
+   WHATSAPP ICON
+========================================================= */
+
+.contact-icon-whatsapp {
+    color: #25D366;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.contact-icon-whatsapp:hover {
+    transform: scale(1.1);
+}
 
 /* =========================================================
    CLOSING
