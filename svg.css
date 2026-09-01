@@ -52,6 +52,13 @@
     stroke-width: 4;
 }
 
+.svg-diamond-nonfill {
+    fill: none;
+    stroke: #f97316;
+    stroke-width: 4;
+}
+
+
 .svg-ring {
     fill: none;
 
