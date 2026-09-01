@@ -61,6 +61,16 @@
     opacity: 0.8;
 }
 
+.svg-ring-orange {
+    fill: none;
+
+    stroke: #ffedd5;
+    stroke-width: 15;
+
+    opacity: 0.8;
+}
+
+
 
 /* =========================================================
    HERO ILLUSTRATION
