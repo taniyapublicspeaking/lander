@@ -70,20 +70,23 @@
 
 .svg-ring {
     fill: none;
-
     stroke: #dbeafe;
     stroke-width: 20;
+    opacity: 0.8;
+}
 
+.svg-ring-org {
+    fill: none;
+    stroke: #f97316;
+    stroke-width: 20;
     opacity: 0.8;
 }
 
 .svg-ring-orange {
     fill: none;
-
     stroke: #f97316;
     stroke-width: 15;
-
-    opacity: 0.8;
+    opacity: 0.3;
 }
 
 
