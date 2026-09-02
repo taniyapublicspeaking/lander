@@ -62,11 +62,11 @@
 }
 
 .svg-diamond-nonfill {
+    fill: none;
     stroke: #2563eb;
     stroke-width: 10;
     opacity: 0.5;
 }
-
 
 .svg-ring {
     fill: none;
