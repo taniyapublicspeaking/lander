@@ -63,8 +63,9 @@
 
 .svg-diamond-nonfill {
     fill: #f97316;
-    stroke: #ffedd5;
+    stroke: #dbeafe;
     stroke-width: 4;
+    opacity: 0.3;
 }
 
 
@@ -79,7 +80,7 @@
     fill: none;
     stroke: #f97316;
     stroke-width: 20;
-    opacity: 0.8;
+    opacity: 0.3;
 }
 
 .svg-ring-orange {
