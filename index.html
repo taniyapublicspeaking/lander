@@ -480,12 +480,388 @@
                         class="programme-svg"
                         aria-hidden="true"
                     >
+                        <!--
                         <circle
                             cx="250"
                             cy="250"
                             r="200"
                             class="programme-circle"
                         />
+                        -->
+
+                        
+                        <!-- Gliter -->
+
+                        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+
+    <defs>
+        <!-- Keep all glitter inside the circle -->
+        <clipPath id="glitterClip">
+            <circle cx="250" cy="250" r="200"/>
+        </clipPath>
+
+        <!-- Soft glitter glow -->
+        <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+            <feGaussianBlur stdDeviation="1.2" result="blur"/>
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+
+        <!-- Four-point sparkle -->
+        <path id="sparkle"
+            d="M0,-6 L1.5,-1.5 L6,0 L1.5,1.5 L0,6 L-1.5,1.5 L-6,0 L-1.5,-1.5 Z"/>
+
+        <!-- Small diamond -->
+        <path id="diamond"
+            d="M0,-3 L2,0 L0,3 L-2,0 Z"/>
+    </defs>
+
+
+    <!-- Your existing circle -->
+    <circle
+        cx="250"
+        cy="250"
+        r="200"
+        class="programme-circle"
+    />
+
+
+    <!-- ================================================= -->
+    <!-- FALLING GLITTER                                  -->
+    <!-- ================================================= -->
+
+    <g
+        clip-path="url(#glitterClip)"
+        opacity="0.5"
+        filter="url(#glow)"
+    >
+
+        <!-- ================= GOLD ================= -->
+
+        <g fill="#FFD700">
+            <circle cx="100" cy="-20" r="2">
+                <animate attributeName="cy"
+                    values="-20;520"
+                    dur="4.1s"
+                    repeatCount="indefinite"/>
+                <animate attributeName="cx"
+                    values="100;108;96;105"
+                    dur="4.1s"
+                    repeatCount="indefinite"/>
+                <animate attributeName="opacity"
+                    values="0.2;1;0.4;1"
+                    dur="1.4s"
+                    repeatCount="indefinite"/>
+            </circle>
+
+            <circle cx="180" cy="30" r="3">
+                <animate attributeName="cy"
+                    values="30;520"
+                    dur="5.3s"
+                    repeatCount="indefinite"/>
+                <animate attributeName="cx"
+                    values="180;172;188;180"
+                    dur="5.3s"
+                    repeatCount="indefinite"/>
+            </circle>
+
+            <circle cx="270" cy="-50" r="2">
+                <animate attributeName="cy"
+                    values="-50;520"
+                    dur="3.8s"
+                    repeatCount="indefinite"/>
+                <animate attributeName="cx"
+                    values="270;280;265;275"
+                    dur="3.8s"
+                    repeatCount="indefinite"/>
+            </circle>
+
+            <circle cx="350" cy="20" r="2.5">
+                <animate attributeName="cy"
+                    values="20;520"
+                    dur="4.7s"
+                    repeatCount="indefinite"/>
+                <animate attributeName="cx"
+                    values="350;342;358;348"
+                    dur="4.7s"
+                    repeatCount="indefinite"/>
+            </circle>
+
+            <circle cx="410" cy="-30" r="2">
+                <animate attributeName="cy"
+                    values="-30;520"
+                    dur="5s"
+                    repeatCount="indefinite"/>
+                <animate attributeName="cx"
+                    values="410;420;405;415"
+                    dur="5s"
+                    repeatCount="indefinite"/>
+            </circle>
+
+            <use href="#sparkle" x="145" y="-10">
+                <animate attributeName="y"
+                    values="-10;520"
+                    dur="5.5s"
+                    repeatCount="indefinite"/>
+                <animateTransform
+                    attributeName="transform"
+                    type="rotate"
+                    from="0 145 0"
+                    to="360 145 0"
+                    dur="3s"
+                    repeatCount="indefinite"/>
+            </use>
+
+            <use href="#sparkle" x="320" y="-30">
+                <animate attributeName="y"
+                    values="-30;520"
+                    dur="4.5s"
+                    repeatCount="indefinite"/>
+                <animateTransform
+                    attributeName="transform"
+                    type="rotate"
+                    from="0 320 0"
+                    to="360 320 0"
+                    dur="2.5s"
+                    repeatCount="indefinite"/>
+            </use>
+        </g>
+
+
+        <!-- ================= PINK ================= -->
+
+        <g fill="#FF4FD8">
+
+            <circle cx="125" cy="40" r="2.5">
+                <animate attributeName="cy"
+                    values="40;520"
+                    dur="4.8s"
+                    repeatCount="indefinite"/>
+                <animate attributeName="cx"
+                    values="125;115;132;120"
+                    dur="4.8s"
+                    repeatCount="indefinite"/>
+                <animate attributeName="opacity"
+                    values="1;0.3;1"
+                    dur="1.8s"
+                    repeatCount="indefinite"/>
+            </circle>
+
+            <circle cx="220" cy="-20" r="2">
+                <animate attributeName="cy"
+                    values="-20;520"
+                    dur="3.9s"
+                    repeatCount="indefinite"/>
+                <animate attributeName="cx"
+                    values="220;230;215;225"
+                    dur="3.9s"
+                    repeatCount="indefinite"/>
+            </circle>
+
+            <circle cx="390" cy="70" r="3">
+                <animate attributeName="cy"
+                    values="70;520"
+                    dur="5.2s"
+                    repeatCount="indefinite"/>
+                <animate attributeName="cx"
+                    values="390;380;398;388"
+                    dur="5.2s"
+                    repeatCount="indefinite"/>
+            </circle>
+
+            <use href="#sparkle" x="200" y="0">
+                <animate attributeName="y"
+                    values="0;520"
+                    dur="4.2s"
+                    repeatCount="indefinite"/>
+            </use>
+
+            <use href="#diamond" x="365" y="-20">
+                <animate attributeName="y"
+                    values="-20;520"
+                    dur="3.7s"
+                    repeatCount="indefinite"/>
+                <animateTransform
+                    attributeName="transform"
+                    type="rotate"
+                    from="0 365 0"
+                    to="360 365 0"
+                    dur="2s"
+                    repeatCount="indefinite"/>
+            </use>
+        </g>
+
+
+        <!-- ================= CYAN ================= -->
+
+        <g fill="#00E5FF">
+
+            <circle cx="80" cy="80" r="2">
+                <animate attributeName="cy"
+                    values="80;520"
+                    dur="4.4s"
+                    repeatCount="indefinite"/>
+                <animate attributeName="cx"
+                    values="80;90;75;85"
+                    dur="4.4s"
+                    repeatCount="indefinite"/>
+            </circle>
+
+            <circle cx="250" cy="-40" r="3">
+                <animate attributeName="cy"
+                    values="-40;520"
+                    dur="5.6s"
+                    repeatCount="indefinite"/>
+                <animate attributeName="cx"
+                    values="250;240;260;250"
+                    dur="5.6s"
+                    repeatCount="indefinite"/>
+                <animate attributeName="opacity"
+                    values="0.2;1;0.3;1"
+                    dur="1.5s"
+                    repeatCount="indefinite"/>
+            </circle>
+
+            <circle cx="430" cy="30" r="2">
+                <animate attributeName="cy"
+                    values="30;520"
+                    dur="4s"
+                    repeatCount="indefinite"/>
+                <animate attributeName="cx"
+                    values="430;420;438;425"
+                    dur="4s"
+                    repeatCount="indefinite"/>
+            </circle>
+
+            <use href="#sparkle" x="285" y="-10">
+                <animate attributeName="y"
+                    values="-10;520"
+                    dur="4.9s"
+                    repeatCount="indefinite"/>
+            </use>
+        </g>
+
+
+        <!-- ================= PURPLE ================= -->
+
+        <g fill="#A855F7">
+
+            <circle cx="155" cy="-30" r="2">
+                <animate attributeName="cy"
+                    values="-30;520"
+                    dur="5.1s"
+                    repeatCount="indefinite"/>
+                <animate attributeName="cx"
+                    values="155;165;148;160"
+                    dur="5.1s"
+                    repeatCount="indefinite"/>
+            </circle>
+
+            <circle cx="300" cy="60" r="2.5">
+                <animate attributeName="cy"
+                    values="60;520"
+                    dur="4.3s"
+                    repeatCount="indefinite"/>
+                <animate attributeName="cx"
+                    values="300;290;308;298"
+                    dur="4.3s"
+                    repeatCount="indefinite"/>
+            </circle>
+
+            <circle cx="370" cy="-40" r="3">
+                <animate attributeName="cy"
+                    values="-40;520"
+                    dur="5.8s"
+                    repeatCount="indefinite"/>
+                <animate attributeName="cx"
+                    values="370;380;365;375"
+                    dur="5.8s"
+                    repeatCount="indefinite"/>
+            </circle>
+
+            <use href="#diamond" x="235" y="-20">
+                <animate attributeName="y"
+                    values="-20;520"
+                    dur="4.6s"
+                    repeatCount="indefinite"/>
+            </use>
+        </g>
+
+
+        <!-- ================= WHITE SPARKLES ================= -->
+
+        <g fill="#FFFFFF">
+
+            <use href="#sparkle" x="115" y="10">
+                <animate attributeName="y"
+                    values="10;520"
+                    dur="6s"
+                    repeatCount="indefinite"/>
+                <animateTransform
+                    attributeName="transform"
+                    type="rotate"
+                    from="0 115 10"
+                    to="360 115 10"
+                    dur="2s"
+                    repeatCount="indefinite"/>
+            </use>
+
+            <use href="#sparkle" x="255" y="40">
+                <animate attributeName="y"
+                    values="40;520"
+                    dur="5s"
+                    repeatCount="indefinite"/>
+                <animate attributeName="opacity"
+                    values="0.2;1;0.2;1"
+                    dur="1.2s"
+                    repeatCount="indefinite"/>
+            </use>
+
+            <use href="#sparkle" x="340" y="-10">
+                <animate attributeName="y"
+                    values="-10;520"
+                    dur="4.6s"
+                    repeatCount="indefinite"/>
+            </use>
+
+            <circle cx="205" cy="20" r="1.5">
+                <animate attributeName="cy"
+                    values="20;520"
+                    dur="3.6s"
+                    repeatCount="indefinite"/>
+                <animate attributeName="opacity"
+                    values="1;0.2;1"
+                    dur="1s"
+                    repeatCount="indefinite"/>
+            </circle>
+
+            <circle cx="375" cy="100" r="1.5">
+                <animate attributeName="cy"
+                    values="100;520"
+                    dur="4.1s"
+                    repeatCount="indefinite"/>
+                <animate attributeName="opacity"
+                    values="0.2;1;0.3;1"
+                    dur="1.3s"
+                    repeatCount="indefinite"/>
+            </circle>
+
+        </g>
+
+    </g>
+
+</svg>
+
+
+
+                        <!-- Gliter-->
+
+
+                        
+
+                        
 
 <!-- Boy -->
 
