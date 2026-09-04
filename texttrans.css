@@ -1,0 +1,184 @@
+.svg-bg-circle {
+    fill: #f8f9ff;
+    stroke: #6c63ff;
+    stroke-width: 4px;
+}
+
+/* Common styling for all points */
+.svg-point {
+    opacity: 0;
+    text-anchor: middle;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+}
+
+/* Point title */
+.point-title {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* Point content */
+.point-content {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    fill: #333;
+}
+
+/* Individual colours */
+.point-1 .point-title {
+    fill: #ff4f81;
+}
+
+.point-2 .point-title {
+    fill: #7b61ff;
+}
+
+.point-3 .point-title {
+    fill: #00a896;
+}
+
+.point-4 .point-title {
+    fill: #f39c12;
+}
+
+
+/*
+    Each point gets 4 seconds:
+    
+    0–0.75s   Fade in
+    0.75–3s   Stay visible
+    3–4s      Fade out
+
+    Total animation = 16 seconds
+*/
+
+/* Point 1 */
+.point-1 {
+    animation-name: pointOne;
+}
+
+@keyframes pointOne {
+    0% {
+        opacity: 0;
+    }
+
+    4.6875% {
+        opacity: 1;
+    }
+
+    18.75% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* Point 2 */
+.point-2 {
+    animation-name: pointTwo;
+}
+
+@keyframes pointTwo {
+    0%,
+    25% {
+        opacity: 0;
+    }
+
+    29.6875% {
+        opacity: 1;
+    }
+
+    43.75% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* Point 3 */
+.point-3 {
+    animation-name: pointThree;
+}
+
+@keyframes pointThree {
+    0%,
+    50% {
+        opacity: 0;
+    }
+
+    54.6875% {
+        opacity: 1;
+    }
+
+    68.75% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* Point 4 */
+.point-4 {
+    animation-name: pointFour;
+}
+
+@keyframes pointFour {
+    0%,
+    75% {
+        opacity: 0;
+    }
+
+    79.6875% {
+        opacity: 1;
+    }
+
+    93.75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* Optional: make the animation accessible */
+@media (prefers-reduced-motion: reduce) {
+    .svg-point {
+        animation: none;
+    }
+
+    .point-1 {
+        opacity: 1;
+    }
+
+    .point-2,
+    .point-3,
+    .point-4 {
+        opacity: 0;
+    }
+}
