@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 500 500"
+     class="scene child-writing">
+
+  <!-- Head -->
+  <path class="skin head"
+        d="M180 105
+           C180 65 210 40 250 40
+           C292 40 320 68 320 108
+           C320 148 290 175 250 175
+           C210 175 180 147 180 105Z"/>
+
+  <!-- Hair -->
+  <path class="hair"
+        d="M179 100
+           C174 58 207 27 250 27
+           C296 27 323 58 320 100
+           C301 78 284 70 265 72
+           C246 53 213 55 197 77
+           C190 84 184 92 179 100Z"/>
+
+  <!-- Eyes -->
+  <path class="feature"
+        d="M211 108 Q220 102 229 108"/>
+  <path class="feature"
+        d="M268 108 Q277 102 286 108"/>
+
+  <!-- Nose -->
+  <path class="feature"
+        d="M248 112 L244 130 L253 132"/>
+
+  <!-- Mouth -->
+  <path class="feature"
+        d="M235 144 Q250 151 265 144"/>
+
+  <!-- Neck -->
+  <path class="skin"
+        d="M225 168 L225 195 L275 195 L275 168Z"/>
+
+  <!-- Body -->
+  <path class="shirt"
+        d="M225 188
+           C185 193 160 215 150 260
+           L130 365
+           L370 365
+           L350 260
+           C340 215 310 193 275 188Z"/>
+
+  <!-- Writing arm -->
+  <path class="skin arm"
+        d="M295 215
+           C325 225 342 247 345 272
+           L326 314
+           L301 302
+           L315 268
+           C310 252 296 244 280 238Z"/>
+
+  <!-- Other arm -->
+  <path class="skin arm"
+        d="M195 220
+           C170 230 157 250 155 274
+           L178 312
+           L201 299
+           L185 267
+           C192 252 205 243 215 238Z"/>
+
+  <!-- Desk -->
+  <path class="desk"
+        d="M75 350 L425 350 L425 375 L75 375Z"/>
+
+  <!-- Book -->
+  <path class="book"
+        d="M125 310
+           Q180 295 250 320
+           Q320 295 375 310
+           L375 350
+           Q315 335 250 355
+           Q185 335 125 350Z"/>
+
+  <!-- Book spine -->
+  <path class="book-line"
+        d="M250 320 L250 355"/>
+
+  <!-- Pencil -->
+  <path class="pencil"
+        d="M303 286 L335 320 L327 328 L295 294Z"/>
+
+  <!-- Pencil tip -->
+  <path class="pencil-tip"
+        d="M303 286 L295 294 L290 279Z"/>
+
+  <!-- Writing marks -->
+  <path class="writing-line line-1"
+        d="M270 327 Q300 318 330 327"/>
+  <path class="writing-line line-2"
+        d="M270 338 Q295 330 320 338"/>
+
+</svg>
