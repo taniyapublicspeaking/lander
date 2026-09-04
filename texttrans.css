@@ -1,9 +1,3 @@
-.svg-bg-circle {
-    fill: #f8f9ff;
-    stroke: #6c63ff;
-    stroke-width: 4px;
-}
-
 /* Common styling for all points */
 .svg-point {
     opacity: 0;
