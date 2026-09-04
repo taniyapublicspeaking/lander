@@ -1,0 +1,437 @@
+/* =========================================================
+   GLOBAL SVG STYLES
+   ========================================================= */
+
+.scene {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+path {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* Skin */
+.skin {
+    fill: #F6C7A8;
+    stroke: #402E32;
+    stroke-width: 4;
+}
+
+/* Hair */
+.hair {
+    fill: #49352A;
+    stroke: #402E32;
+    stroke-width: 4;
+}
+
+/* Facial features */
+.feature,
+.mouth {
+    fill: none;
+    stroke: #402E32;
+    stroke-width: 4;
+}
+
+/* =========================================================
+   BOY + MICROPHONE
+   ========================================================= */
+
+.boy-microphone .shirt {
+    fill: #4F8FD9;
+    stroke: #402E32;
+    stroke-width: 4;
+}
+
+.boy-microphone .mic {
+    fill: #4A4D55;
+    stroke: #292B30;
+    stroke-width: 4;
+}
+
+.boy-microphone .mic-grille {
+    fill: none;
+    stroke: #B9BDC5;
+    stroke-width: 3;
+}
+
+.boy-microphone .stand {
+    fill: none;
+    stroke: #292B30;
+    stroke-width: 6;
+}
+
+.boy-microphone .sound {
+    fill: none;
+    stroke: #FFB84D;
+    stroke-width: 5;
+    opacity: 0;
+    transform-origin: 405px 290px;
+}
+
+/* Mouth talking animation */
+.boy-microphone .mouth {
+    transform-origin: center;
+    animation: talking-mouth 0.45s ease-in-out infinite alternate;
+}
+
+/* Microphone sound waves */
+.boy-microphone .sound-1 {
+    animation: sound-wave 1.2s ease-out infinite;
+}
+
+.boy-microphone .sound-2 {
+    animation: sound-wave 1.2s 0.35s ease-out infinite;
+}
+
+@keyframes talking-mouth {
+    from {
+        transform: scaleY(0.6);
+    }
+
+    to {
+        transform: scaleY(1.4);
+    }
+}
+
+@keyframes sound-wave {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.15);
+    }
+}
+
+
+/* =========================================================
+   GIRL READING
+   ========================================================= */
+
+.girl-reading .dress {
+    fill: #E987B5;
+    stroke: #402E32;
+    stroke-width: 4;
+}
+
+.girl-reading .book {
+    fill: #FFF4D6;
+    stroke: #403B35;
+    stroke-width: 4;
+}
+
+.girl-reading .book-line {
+    fill: none;
+    stroke: #C5A76D;
+    stroke-width: 3;
+}
+
+.girl-reading .page-line {
+    fill: none;
+    stroke: #D4BD91;
+    stroke-width: 3;
+}
+
+/* Book gently moves while reading */
+.girl-reading .book {
+    transform-origin: 250px 350px;
+    animation: book-reading 2.5s ease-in-out infinite;
+}
+
+/* Head gently follows the book */
+.girl-reading .head {
+    transform-origin: 245px 120px;
+    animation: reading-head 2.5s ease-in-out infinite;
+}
+
+@keyframes book-reading {
+    0%, 100% {
+        transform: rotate(-1deg);
+    }
+
+    50% {
+        transform: rotate(1deg);
+    }
+}
+
+@keyframes reading-head {
+    0%, 100% {
+        transform: rotate(1deg);
+    }
+
+    50% {
+        transform: rotate(-1deg);
+    }
+}
+
+
+/* =========================================================
+   CHILD WRITING
+   ========================================================= */
+
+.child-writing .shirt {
+    fill: #67B98B;
+    stroke: #402E32;
+    stroke-width: 4;
+}
+
+.child-writing .desk {
+    fill: #C98B5A;
+    stroke: #513728;
+    stroke-width: 4;
+}
+
+.child-writing .book {
+    fill: #FFF4D6;
+    stroke: #403B35;
+    stroke-width: 4;
+}
+
+.child-writing .book-line {
+    fill: none;
+    stroke: #C5A76D;
+    stroke-width: 3;
+}
+
+.child-writing .pencil {
+    fill: #FFD15C;
+    stroke: #403B35;
+    stroke-width: 3;
+}
+
+.child-writing .pencil-tip {
+    fill: #E8C49A;
+    stroke: #403B35;
+    stroke-width: 2;
+}
+
+.child-writing .writing-line {
+    fill: none;
+    stroke: #5986C7;
+    stroke-width: 3;
+    stroke-dasharray: 40;
+    stroke-dashoffset: 40;
+}
+
+.child-writing .line-1 {
+    animation: write-line 1.5s ease-in-out infinite;
+}
+
+.child-writing .line-2 {
+    animation: write-line 1.5s 0.5s ease-in-out infinite;
+}
+
+/* Writing hand moves back and forth */
+.child-writing .arm {
+    transform-origin: 300px 250px;
+    animation: writing-arm 1s ease-in-out infinite alternate;
+}
+
+/* Pencil moves with hand */
+.child-writing .pencil {
+    transform-origin: 303px 290px;
+    animation: pencil-writing 1s ease-in-out infinite alternate;
+}
+
+@keyframes writing-arm {
+    from {
+        transform: rotate(-3deg);
+    }
+
+    to {
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes pencil-writing {
+    from {
+        transform: translateX(-4px) rotate(-2deg);
+    }
+
+    to {
+        transform: translateX(4px) rotate(2deg);
+    }
+}
+
+@keyframes write-line {
+    0% {
+        stroke-dashoffset: 40;
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+}
+
+
+/* =========================================================
+   TWO CHILDREN CONVERSATION
+   ========================================================= */
+
+.conversation {
+    width: 700px;
+}
+
+.conversation .blue-shirt {
+    fill: #5794D9;
+    stroke: #402E32;
+    stroke-width: 4;
+}
+
+.conversation .pink-dress {
+    fill: #E987B5;
+    stroke: #402E32;
+    stroke-width: 4;
+}
+
+.conversation .speech {
+    fill: #FFFFFF;
+    stroke: #403B35;
+    stroke-width: 4;
+}
+
+.conversation .dot {
+    fill: #5A5A66;
+    stroke: none;
+}
+
+/* Boy talks first */
+.conversation .speech-boy {
+    animation: speech-boy 3s ease-in-out infinite;
+}
+
+/* Girl responds */
+.conversation .speech-girl {
+    animation: speech-girl 3s ease-in-out infinite;
+}
+
+/* Boy mouth */
+.conversation .boy-mouth {
+    transform-origin: 220px 146px;
+    animation: conversation-mouth 3s ease-in-out infinite;
+}
+
+/* Girl mouth */
+.conversation .girl-mouth {
+    transform-origin: 470px 143px;
+    animation: conversation-mouth-girl 3s ease-in-out infinite;
+}
+
+/* Dots appear while speaking */
+.conversation .dot {
+    opacity: 0;
+}
+
+.conversation .dot-1 {
+    animation: conversation-dot 3s 0.3s infinite;
+}
+
+.conversation .dot-2 {
+    animation: conversation-dot 3s 0.45s infinite;
+}
+
+.conversation .dot-3 {
+    animation: conversation-dot 3s 0.6s infinite;
+}
+
+@keyframes speech-boy {
+    0%, 45% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    50%, 100% {
+        opacity: 0.35;
+        transform: translateY(5px);
+    }
+}
+
+@keyframes speech-girl {
+    0%, 45% {
+        opacity: 0.35;
+        transform: translateY(5px);
+    }
+
+    50%, 95% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0.35;
+    }
+}
+
+@keyframes conversation-mouth {
+    0%, 45% {
+        transform: scaleY(1);
+    }
+
+    10%, 20%, 30% {
+        transform: scaleY(1.5);
+    }
+
+    50%, 100% {
+        transform: scaleY(0.7);
+    }
+}
+
+@keyframes conversation-mouth-girl {
+    0%, 50% {
+        transform: scaleY(0.7);
+    }
+
+    60%, 70%, 80% {
+        transform: scaleY(1.5);
+    }
+
+    95%, 100% {
+        transform: scaleY(0.7);
+    }
+}
+
+@keyframes conversation-dot {
+    0%, 20% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    30%, 45% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50%, 100% {
+        opacity: 0;
+    }
+}
+
+
+/* =========================================================
+   OPTIONAL: ACCESSIBILITY
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
