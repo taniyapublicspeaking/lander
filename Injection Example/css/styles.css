@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* =========================
+   Header
+   ========================= */
+
+.site-header {
+    background-color: #222;
+    color: white;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 15px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.main-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    color: #4da6ff;
+}
+
+
+/* =========================
+   Layout
+   ========================= */
+
+.layout {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    min-height: 500px;
+
+    display: flex;
+}
+
+
+/* =========================
+   Sidebar
+   ========================= */
+
+.sidebar {
+    width: 220px;
+
+    background-color: #333;
+    color: white;
+
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-nav a {
+    color: white;
+    text-decoration: none;
+
+    padding: 10px;
+
+    border-radius: 4px;
+}
+
+.sidebar-nav a:hover {
+    background-color: #444;
+}
+
+
+/* =========================
+   Main Content
+   ========================= */
+
+.content {
+    flex: 1;
+
+    background-color: white;
+
+    padding: 30px;
+}
+
+.content h1 {
+    margin-top: 0;
+}
+
+
+/* =========================
+   Footer
+   ========================= */
+
+.site-footer {
+    background-color: #222;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+
+/* =========================
+   Include Error
+   ========================= */
+
+.include-error {
+    color: red;
+}
+
+
+/* =========================
+   Mobile
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .sidebar-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+}
