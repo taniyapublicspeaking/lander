@@ -97,7 +97,8 @@ Usually, put your base styles first and responsive/media-query styles afterward:
 
         <!-- ================= HEADER BEGIN ================= --> 
         <div data-include="components/header.html"></div>
-
+    
+        <div id="header"></div>
     
     <main>
 
@@ -135,6 +136,15 @@ Usually, put your base styles first and responsive/media-query styles afterward:
 
 <!-- INJECTION SCRIPT -->
 <script src="js/include.js"></script>
+
+
+<script>
+    fetch("compknents/header.html")
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById("header").innerHTML = html;
+      });
+</script>
 
 
 </body>
