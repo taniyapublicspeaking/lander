@@ -1,6 +1,6 @@
       /* =========================
        RESET
-    
+    ========================== */
     * {
       margin: 0;
       padding: 0;
@@ -28,7 +28,7 @@
     button {
       font: inherit;
     }
-========================== */
+
     .container {
       width: min(1120px, 92%);
       margin: 0 auto;
