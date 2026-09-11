@@ -1,0 +1,46 @@
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+    position: absolute;
+    inset: 0 0 auto;
+    z-index: 100;
+
+    padding: 22px 0;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    color: var(--navy);
+    font-size: 1.05rem;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+}
+
+.logo span {
+    color: var(--orange);
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.main-nav a {
+    color: var(--navy);
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.main-nav a:hover {
+    color: var(--orange);
+}
