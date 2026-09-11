@@ -2,13 +2,23 @@
    HEADER
 ========================================================= */
 
-.site-header {
+/*.site-header {
     position: absolute;
     inset: 0 0 auto;
     z-index: 100;
-
     padding: 22px 0;
+}*/
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
+
+
 
 .header-inner {
     display: flex;
