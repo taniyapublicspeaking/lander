@@ -21,58 +21,29 @@
     <link rel="stylesheet" href="css/basestyles1.css">
 
     <!-- NAVIGATION STYLES -->
-    <link rel="stylesheet" href="css/navigation1.css">
-    
+    <link rel="stylesheet" href="css/navigation1.css">    
     
     <!-- SVG STYLES -->
-    <link rel="stylesheet" href="css/tst.css">  
+    <link rel="stylesheet" href="css/tst1.css">  
 
 </head>
 
 <body>
 
 <!-- ================= HEADER ================= --> 
-<div data-include="components/header.html"></div>
-
-
-
-  <header>
-    <div class="container navbar">
-
-      <a href="#" class="logo">
-        Nov<span>a</span>
-      </a>
-
-      <button
-        class="menu-toggle"
-        id="menuToggle"
-        aria-label="Toggle navigation"
-      >
-        ☰
-      </button>
-
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li>
-          <a href="#contact" class="nav-button">Get Started</a>
-        </li>
-      </ul>
-
-    </div>
-  </header>
-    
+<div data-include="components/header.html"></div> 
     
     <main>
 
         <!-- ================= HERO ================= -->
+        <div data-include="components/hero.html"></div>
 
         <!-- ================= LEARN ================= -->      
         <div data-include="components/learn.html"></div>
 
-
         <!-- ================= WHY PROGRAMME ================= -->
+        
+        <div data-include="components/whyprogramme.html"></div>
 
         <!-- ================= EDUCATOR ================= -->
         <div data-include="components/educator.html"></div>
@@ -89,7 +60,6 @@
         <!-- ================= CLOSING ================= -->
         <div data-include="components/closing.html"></div>
 
-
     </main>
 
 
@@ -100,22 +70,6 @@
 <!-- INJECTION SCRIPT -->
 <script src="js/include.js"></script>
 
-
-<script>
-    const menuToggle = document.getElementById("menuToggle");
-    const navLinks = document.getElementById("navLinks");
-
-    menuToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-
-    // Close mobile menu after clicking a link
-    document.querySelectorAll(".nav-links a").forEach(link => {
-      link.addEventListener("click", () => {
-        navLinks.classList.remove("active");
-      });
-    });
-  </script>
 
 </body>
     
