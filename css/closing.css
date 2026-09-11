@@ -1,0 +1,52 @@
+/* =========================================================
+   CLOSING
+========================================================= */
+
+.closing-section {
+    position: relative;
+    overflow: hidden;
+
+    padding: 110px 0;
+
+    color: var(--white);
+    background:
+        linear-gradient(
+            135deg,
+            var(--orange),
+            #ea580c
+        );
+
+    text-align: center;
+}
+
+.closing-content {
+    position: relative;
+    z-index: 2;
+}
+
+.closing-section .eyebrow {
+    color: var(--yellow);
+}
+
+.closing-section h2 {
+    margin-bottom: 20px;
+}
+
+.closing-section h2 span {
+    color: var(--yellow);
+}
+
+.closing-section p {
+    max-width: 600px;
+    margin-inline: auto;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.closing-section .btn {
+    margin-top: 15px;
+}
+
+.closing-decoration {
+    width: 250px;
+    margin-bottom: 20px;
+}
