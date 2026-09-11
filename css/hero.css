@@ -1,0 +1,81 @@
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    position: relative;
+    min-height: 760px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eff6ff 0%,
+            #ffffff 55%,
+            #fff7ed 100%
+        );
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 50px;
+
+    padding-top: 80px;
+}
+
+.hero-copy {
+    max-width: 680px;
+}
+
+.hero-copy h1 {
+    margin-bottom: 25px;
+    color: var(--navy);
+}
+
+.hero-copy h1 span {
+    color: var(--orange);
+}
+
+.hero-age {
+    display: inline-block;
+
+    margin-bottom: 20px;
+    padding: 8px 15px;
+
+    color: var(--navy);
+    background: var(--white);
+
+    border-radius: 999px;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.06);
+}
+
+.hero-description {
+    max-width: 580px;
+    margin-bottom: 30px;
+
+    font-size: 1.1rem;
+}
+
+.hero-visual {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-card {
+    width: min(100%, 500px);
+    padding: 20px;
+}
