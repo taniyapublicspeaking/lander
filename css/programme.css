@@ -1,0 +1,64 @@
+/* =========================================================
+   PROGRAMME
+========================================================= */
+
+.programme-section {
+    background: var(--sky);
+}
+
+.programme-layout {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 80px;
+}
+
+.programme-visual {
+    display: flex;
+    justify-content: center;
+}
+
+.programme-svg {
+    width: min(100%, 450px);
+}
+
+.programme-copy h2 {
+    margin-bottom: 25px;
+    color: var(--navy);
+}
+
+.programme-copy h2 span {
+    color: var(--orange);
+}
+
+.programme-copy > p {
+    max-width: 620px;
+}
+
+.programme-points {
+    display: grid;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.programme-point {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.programme-point span {
+    color: var(--orange);
+    font-size: 0.8rem;
+    font-weight: 900;
+}
+
+.programme-point p {
+    margin: 0;
+    color: var(--navy);
+    font-weight: 700;
+}
