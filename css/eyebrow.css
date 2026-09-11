@@ -1,0 +1,14 @@
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.eyebrow {
+    margin-bottom: 15px;
+
+    color: var(--orange);
+
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
