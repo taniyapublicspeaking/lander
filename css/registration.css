@@ -1,0 +1,51 @@
+/* =========================================================
+   REGISTRATION
+========================================================= */
+
+.registration-section {
+    background: var(--off-white);
+}
+
+.registration-box {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 0.35fr 1.65fr;
+    align-items: center;
+
+    padding: 65px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--orange-light),
+            #ffffff
+        );
+
+    border-radius: var(--radius);
+}
+
+.registration-content {
+    position: relative;
+    z-index: 2;
+}
+
+.registration-content h2 {
+    max-width: 700px;
+    color: var(--navy);
+}
+
+.registration-content h2 span {
+    color: var(--orange);
+}
+
+.registration-content p {
+    max-width: 700px;
+}
+
+.registration-decoration {
+    display: flex;
+    justify-content: center;
+}
