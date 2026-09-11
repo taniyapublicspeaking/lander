@@ -1,0 +1,34 @@
+<header class="site-header">
+  <nav>
+    <a href="/">Logo</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+</header>
+
+
+<body>
+
+  <div id="header"></div>
+
+  <main>
+    <h1>Welcome</h1>
+  </main>
+
+  <script>
+    fetch("header.html")
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById("header").innerHTML = html;
+      });
+  </script>
+
+</body>
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
+}
+
