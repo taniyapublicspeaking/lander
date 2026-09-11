@@ -1,0 +1,86 @@
+<section class="location-section">
+
+            <div class="container location-container">
+
+                <div class="location-copy">
+
+                    <p class="eyebrow">Location</p>                    
+
+                    <h3>Kings Institute, Nugegoda</h3>
+
+                    <p class="location-address">
+                    
+<a href="https://www.google.com/maps/search/?api=1&query=No.+239%2F2+High+Level+Road%2C+Nugegoda%2C+Sri+Lanka"
+   target="_blank"
+   rel="noopener noreferrer">
+  📍 View Location on Google Maps
+</a>
+           
+                    </p>
+
+                </div>
+
+
+                <div class="location-visual">
+
+                    <svg
+                        viewBox="0 0 400 250"
+                        class="map-svg"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M20 60
+                               C80 20 110 100 165 65
+                               S260 20 300 70
+                               S360 130 380 80"
+                            class="map-road"
+                        />
+
+                        <path
+                            d="M40 190
+                               C100 150 150 210 210 175
+                               S300 140 365 190"
+                            class="map-road"
+<a href="https://www.google.com/maps/search/?api=1&query=No.+239%2F2+High+Level+Road%2C+Nugegoda%2C+Sri+Lanka" target="_blank">
+
+  <!-- Invisible larger click target -->
+        <circle
+            cx="205"
+            cy="110"
+            r="20"
+            fill="transparent"
+            style="cursor: pointer;"
+        />
+
+    
+                        <circle
+                            cx="205"
+                            cy="110"
+                            r="18"
+                            class="map-pin"
+                        />
+
+    <!-- Pulsating border -->
+    <circle
+        cx="205"
+        cy="110"
+        r="25"
+        class="map-pin-pulse"
+    />
+
+                        <circle
+                            cx="205"
+                            cy="110"
+                            r="7"
+                            class="map-pin-center"
+                        />
+
+  </a>
+    
+                    </svg>
+
+                </div>
+
+            </div>
+
+        </section>
