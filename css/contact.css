@@ -1,0 +1,99 @@
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-section {
+    background: var(--white);
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.contact-layout h2 {
+    color: var(--navy);
+}
+
+.contact-details {
+    display: grid;
+    gap: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    padding: 20px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-small);
+
+    transition:
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.contact-item:hover {
+    border-color: var(--orange);
+    transform: translateX(5px);
+}
+
+.contact-icon {
+    display: grid;
+    place-items: center;
+
+    width: 50px;
+    height: 50px;
+
+    color: var(--white);
+    background: var(--navy);
+
+    border-radius: 50%;
+
+    font-weight: 900;
+}
+
+.contact-item small {
+    display: block;
+    color: var(--muted);
+}
+
+.contact-item strong {
+    display: block;
+    color: var(--navy);
+}
+
+/* =========================================================
+   MOBILE ICON
+========================================================= */
+
+.contact-icon-mobile {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #007bff;
+}
+
+.contact-icon-mobile:hover {
+    transform: scale(1.1);
+}
+
+/* =========================================================
+   WHATSAPP ICON
+========================================================= */
+
+.contact-icon-whatsapp {
+    color: #25D366;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.contact-icon-whatsapp:hover {
+    transform: scale(1.1);
+}
