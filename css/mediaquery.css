@@ -62,19 +62,4 @@
         margin-inline: auto;
     }
 
-    .registration-box {
-        grid-template-columns: 1fr;
-        text-align: center;
-        padding: 50px 35px;
-    }
-
-    .registration-decoration {
-        max-width: 140px;
-        margin: 0 auto 20px;
-    }
-
-    .registration-content p {
-        margin-inline: auto;
-    }
-
 }
