@@ -12,6 +12,7 @@
 
 
     <!-- ================ADDITIONAL STYLES=================================== -->
+    <link rel="stylesheet" href="css/headermenu.css">
 
     <link rel="stylesheet" href="css/svgstyles2.css">
     
@@ -96,26 +97,43 @@ Usually, put your base styles first and responsive/media-query styles afterward:
 <body>
 
    <!-- ================= HEADER BEGIN ================= --> 
-   <header class="site-header">
-        <div class="container header-inner">
+<header class="site-header">
+    <div class="header-inner">
 
-            <a href="#" class="logo" aria-label="English Classes Home">
-                ENGLISH<span>CLASSES</span>
-            </a>
+        <a href="#" class="logo" aria-label="English Classes Home">
+            ENGLISH<span>CLASSES</span>
+        </a>
 
-            <nav class="main-nav" aria-label="Main navigation">
-                <a href="#learn">What Your Child Will Learn</a>
-                <a href="#programme">Why This Programme?</a>
-                <a href="#educator">Meet The Educator</a>
-                <a href="#contact">Contact Us</a>
-            </nav>
+        <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+            <a href="#learn">What Your Child Will Learn</a>
+            <a href="#programme">Why This Programme?</a>
+            <a href="#educator">Meet The Educator</a>
+            <a href="#contact">Contact Us</a>
 
-            <a href="#registration" class="btn btn-small">
+            <a href="#registration" class="mobile-register">
                 Register Now
             </a>
+        </nav>
 
-        </div>
-    </header>
+        <a href="#registration" class="desktop-register">
+            Register Now
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mainNav"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+</header>
     <!-- ================= HEADER END ================= --> 
 
     
@@ -154,6 +172,10 @@ Usually, put your base styles first and responsive/media-query styles afterward:
     <div data-include="components/footer.html"></div>
         
 
+
+
+<script src="js/headermenu.js"></script>
+    
 <!-- INJECTION SCRIPT -->
 <script src="js/include.js"></script>
 
