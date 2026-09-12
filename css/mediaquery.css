@@ -22,9 +22,17 @@
         margin-inline: auto;
     }
 
-    .hero-visual {
-        order: -1;
-    }
+/* changed order begin */   
+.hero-copy {
+    order: 1;
+}
+
+.hero-visual {
+    order: 2;
+}
+/* changed order end */
+
+   
 
     .hero-card {
         max-width: 420px;
