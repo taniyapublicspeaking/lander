@@ -10,3 +10,9 @@ circular-img2 {
     height: 500px;
     object-fit: cover;
 }
+
+img3 {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
