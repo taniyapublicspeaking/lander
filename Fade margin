@@ -1,0 +1,116 @@
+
+Yes. A nice way is to use two absolutely/fixed-positioned SVG <img> elements—one on the left and one on the right—and control their transparency with CSS.
+
+Simple approach
+
+
+<body>
+  <img class="page-decoration left" src="left-decoration.svg" alt="">
+  <img class="page-decoration right" src="right-decoration.svg" alt="">
+
+  <main class="content">
+    <h1>My Page</h1>
+    <p>Your page content goes here...</p>
+  </main>
+</body>
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+  background: #fff;
+}
+
+.page-decoration {
+  position: fixed;
+  top: 0;
+  width: 180px;
+  height: 100vh;
+
+  opacity: 0.25;
+  pointer-events: none;
+
+  z-index: -1;
+}
+
+.page-decoration.left {
+  left: 0;
+}
+
+.page-decoration.right {
+  right: 0;
+}
+
+.content {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+≈=======================
+If you want the SVG to fade toward the content
+You can use a CSS mask/gradient effect. For example, the left decoration can gradually disappear toward the center:
+
+
+.page-decoration.left {
+  left: 0;
+
+  -webkit-mask-image: linear-gradient(
+    to right,
+    black 0%,
+    black 50%,
+    transparent 100%
+  );
+
+  mask-image: linear-gradient(
+    to right,
+    black 0%,
+    black 50%,
+    transparent 100%
+  );
+}
+
+.page-decoration.right {
+  right: 0;
+
+  -webkit-mask-image: linear-gradient(
+    to left,
+    black 0%,
+    black 50%,
+    transparent 100%
+  );
+
+  mask-image: linear-gradient(
+    to left,
+    black 0%,
+    black 50%,
+    transparent 100%
+  );
+}
+
+
+
+
+===============
+Important: mobile screens
+You probably don't want the decorations covering your content on phones:
+
+
+
+@media (max-width: 700px) {
+  .page-decoration {
+    width: 80px;
+    opacity: 0.15;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .page-decoration {
+    display: none;
+  }
+}
+
+
+
+
