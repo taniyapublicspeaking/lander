@@ -1,12 +1,6 @@
 .page-decoration {
   position: fixed;
   top: 0;
-  width: 180px;
-  height: 100vh;
-
-  opacity: 0.25;
-  pointer-events: none;
-
   z-index: 1;
 }
 
