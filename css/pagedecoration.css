@@ -1,3 +1,5 @@
+
+/*
 .page-decoration {
   position: fixed;
   top: 0;
@@ -13,7 +15,7 @@
   right: 0;
 }
 
-/*
+
 .page-decoration.left {
   left: 0;
 
