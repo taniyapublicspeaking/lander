@@ -40,7 +40,7 @@
 
 .div-container-card {
   position: relative;
-  border: 3px solid green;
+  border: 5px solid green;
   border-radius: 10px;
 }
 
@@ -55,5 +55,12 @@
   border: 3px solid pink;
   border-radius: 10px;
 }
+
+div-container-info {
+  position: relative;
+  border: 3px solid yellow;
+  border-radius: 10px;
+}
+
 
 
