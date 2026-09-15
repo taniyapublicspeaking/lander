@@ -5,3 +5,13 @@
   background-size: cover;
   background-position: center;
 }
+
+
+.image-box {
+  width: 400px;
+  height: 250px;
+  background-image: url("image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
