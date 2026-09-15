@@ -10,7 +10,7 @@
 .image-box {
   width: 400px;
   height: 250px;
-  background-image: url("https://github.com/taniyapublicspeaking/lander/blob/main/images/cw.png");
+  background-image: url('https://github.com/taniyapublicspeaking/lander/blob/main/images/cw.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
