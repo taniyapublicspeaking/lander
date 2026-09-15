@@ -18,3 +18,23 @@
   position: relative;
   z-index: 1;
 }
+
+
+.div-container {
+  position: relative;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.div-container-copy {
+  position: relative;
+  border: 3px solid red;
+  border-radius: 10px;
+}
+
+.div-container-visual {
+  position: relative;
+  border: 3px solid blue;
+  border-radius: 10px;
+}
+
