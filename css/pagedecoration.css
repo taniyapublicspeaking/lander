@@ -62,7 +62,7 @@
   border-radius: 10px;
 }
 
-educator-card2 {
+.educator-card2 {
     display: grid;
     grid-template-columns: 0.7fr 1.3fr;
     align-items: center;
