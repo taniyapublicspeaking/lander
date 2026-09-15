@@ -1,63 +1,22 @@
-.bfill {  
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://github.com/taniyapublicspeaking/lander/blob/main/images/flowerblueyellow.svg");
-  background-size: cover;
-  background-position: center;
+.image-box2 {
+  position: relative;
+  width: 400px;
+  height: 250px;
+  border: 3px solid white;
+border-radius: 10px;
+
 }
 
+.image-box2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../images/cw.png") center/cover no-repeat;
+  opacity: 0.5; /* 50% transparent */
+  z-index: 0;
+}
 
-/*
-.page-decoration {
-  position: fixed;
-  top: 0;
+.image-box2 h2 {
+  position: relative;
   z-index: 1;
 }
-
-
-.page-decoration.left {
-  left: 0;
-}
-
-.page-decoration.right {
-  right: 0;
-}
-
-
-.page-decoration.left {
-  left: 0;
-
-  -webkit-mask-image: linear-gradient(
-    to right,
-    black 0%,
-    black 50%,
-    transparent 100%
-  );
-
-  mask-image: linear-gradient(
-    to right,
-    black 0%,
-    black 50%,
-    transparent 100%
-  );
-}
-
-.page-decoration.right {
-  right: 0;
-
-  -webkit-mask-image: linear-gradient(
-    to left,
-    black 0%,
-    black 50%,
-    transparent 100%
-  );
-
-  mask-image: linear-gradient(
-    to left,
-    black 0%,
-    black 50%,
-    transparent 100%
-  );
-}
-
-*/
