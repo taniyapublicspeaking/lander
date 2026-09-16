@@ -143,5 +143,24 @@
     opacity: 1;
 }
 
+/* ==≈=================================================================== */
 
+.hero-section-decoration{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    pointer-events: none;
+}
 
+.hero-section-decoration-top {
+    left: 0px;
+    top: 0px;
+}
+
+.hero-section-image-sun{
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
