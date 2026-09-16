@@ -160,6 +160,8 @@
 }
 
 .hero-section-image-sun{
+  x:90%;
+  y:50%;
     width: 100px;
     height: 100px;
     opacity: 1;
