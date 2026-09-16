@@ -96,6 +96,31 @@
     pointer-events: none;
 }
 
+
+.section-decoration2 {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid black;
+    pointer-events: none;
+}
+
+.section-decoration3 {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: 5px solid black;
+    pointer-events: none;
+}
+
+
+
+
+
 .section-decoration-left {
     left: 0px;
     bottom: 0px;
