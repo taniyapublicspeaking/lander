@@ -4,6 +4,8 @@
 
 .registration-section {
     background: var(--off-white);
+    position: relative; /* new line to support svg */
+
 }
 
 .registration-box {
