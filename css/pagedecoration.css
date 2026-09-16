@@ -159,6 +159,12 @@
     top: 0px;
 }
 
+.hero-section-decoration-bottom{
+    left: 0px;
+    bottom: 0px;
+}
+
+
 .hero-section-image-sun{
     border: 1px solid red;
     x:97%;
