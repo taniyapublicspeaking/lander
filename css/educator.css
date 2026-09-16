@@ -4,6 +4,7 @@
 
 .educator-section {
     background: var(--white);
+    position: relative;
 }
 
 .educator-card {
