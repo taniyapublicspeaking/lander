@@ -3,7 +3,8 @@
 ========================================================= */
 
 .learn-section {
-    background: var(--white);
+   background: var(--white);
+   position: relative; /* new line to support svg */
 }
 
 .learning-grid {
