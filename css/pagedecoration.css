@@ -160,6 +160,7 @@
 }
 
 .hero-section-image-sun{
+    border: 1px solid red;
     x:97%;
     y:30%;
     width: 200px;
