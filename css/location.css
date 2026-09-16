@@ -4,7 +4,7 @@
 
 .location-section {
     padding: 80px 0;
-
+    position: relative; /* new line to support svg */
     color: var(--white);
     background: var(--navy);
 }
