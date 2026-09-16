@@ -4,6 +4,7 @@
 
 .programme-section {
     background: var(--sky);
+    position: relative; /* new line to support svg */
 }
 
 .programme-layout {
