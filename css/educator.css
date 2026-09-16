@@ -4,7 +4,7 @@
 
 .educator-section {
     background: var(--white);
-    position: relative;
+    position: relative; /* new line to support svg */
 }
 
 .educator-card {
