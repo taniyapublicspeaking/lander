@@ -189,31 +189,31 @@
 .hero-section-image-sun {
     x: calc(100% - 300px);
     y: 0px;
-    width: 300px;
+    width: 400px;
     height: auto;
     opacity: 1;
 }
 
 
 .hero-section-image-cloud1 {
-    x: 100px;
-    y: 0px;
-    width: 300px;
+    x: 300px;
+    y: 40px;
+    width: 400px;
     height: auto;
     opacity: 1;
 }
 
 .hero-section-image-cloud2 {
-    x: 300px;
-    y: 0px;
-    width: 300px;
+    x: 600px;
+    y: 70px;
+    width: 400px;
     height: auto;
     opacity: 1;
 }
 
 .hero-section-image-cloud4 {
-    x: 500px;
-    y: 0px;
+    x: 700px;
+    y: 60px;
     width: 300px;
     height: auto;
     opacity: 1;
