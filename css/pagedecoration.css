@@ -165,13 +165,20 @@
 }
 
 
-.hero-section-image-sun{
-    border: 1px solid red;
-    x:97%;
-    y:30%;
+.hero-section-image-sun {
+    x: 60%;
+    y: 30%;
+    width: 40%;
+    height: 40%;
+    opacity: 1;
+  
+/*  
+  x: calc(100% - 200px);
+  y: 30%;
     width: 200px;
     height: 200px;
-    opacity: 1;
+  */
+  
 }
 
 .hero-section-image-cloud1{
