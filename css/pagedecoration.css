@@ -196,15 +196,15 @@
 
 
 .hero-section-image-cloud1 {
-    x: 250px;
-    y: 40px;
+    x: 550px;
+    y: 35px;
     width: 350px;
     height: auto;
     opacity: 1;
 }
 
 .hero-section-image-cloud2 {
-    x: 550px;
+    x: 250px;
     y: 70px;
     width: 350px;
     height: auto;
