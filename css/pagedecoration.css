@@ -211,6 +211,7 @@
       height: 180px;
       overflow: hidden;
       background: #0f172a;
+      z-index: 3;
     }
 
     .svg-container svg {
