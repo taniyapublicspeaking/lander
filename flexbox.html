@@ -37,3 +37,55 @@
   height: 100%;
   display: block;
 }
+
+
+<div class="svg-container">
+  <svg class="svg-left" viewBox="0 0 100 500" preserveAspectRatio="none">
+    <!-- left shape -->
+  </svg>
+
+  <svg class="svg-right" viewBox="0 0 100 500" preserveAspectRatio="none">
+    <!-- right shape -->
+  </svg>
+</div>
+
+.svg-container {
+  position: relative;
+  width: 100%;
+  height: 50vh;       /* responsive height */
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.svg-left,
+.svg-right {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+.svg-left {
+  left: 0;
+  width: 25%;
+}
+
+.svg-right {
+  right: 0;
+  width: 25%;
+}
+
+The important parts are:
+
+position: relative on the parent.
+
+position: absolute on the SVGs.
+
+left: 0 for the left SVG and right: 0 for the right SVG.
+
+height: 100% makes both SVGs follow the parent's responsive height.
+
+preserveAspectRatio="none" allows the SVG shape to stretch with the container.
+
+If you show me your current SVG/HTML/CSS, I can modify it so the left and right SVG areas dock correctly without distorting the shape unnecessarily
+
+
