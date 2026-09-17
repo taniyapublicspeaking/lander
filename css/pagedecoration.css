@@ -148,9 +148,9 @@
 .hero-section-decoration{
     position: absolute;
     z-index: 3;
-    width: 100%;
+    width: 900px;
     height: 300px;
-    border: 1px solid black;
+    border: 5px solid black;
     pointer-events: none;
 }
 
@@ -168,8 +168,8 @@
 .hero-section-image-sun {
     x: 300px;
     y: 150px;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     opacity: 1;
   
 /*  
