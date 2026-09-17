@@ -189,14 +189,14 @@
 .hero-section-image-sun {
     x: calc(100% - 300px);
     y: 0px;
-    width: 400px;
+    width: 300px;
     height: auto;
     opacity: 1;
 }
 
 
 .hero-section-image-cloud1 {
-    x: 300px;
+    x: 250px;
     y: 40px;
     width: 350px;
     height: auto;
@@ -204,15 +204,15 @@
 }
 
 .hero-section-image-cloud2 {
-    x: calc(100% - 1050px);
+    x: 550px;
     y: 70px;
-    width: 400px;
+    width: 350px;
     height: auto;
     opacity: 1;
 }
 
 .hero-section-image-cloud4 {
-    x: calc(100% - 650px);;
+    x: 700;
     y: 60px;
     width: 400px;
     height: auto;
