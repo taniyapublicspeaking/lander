@@ -87,7 +87,7 @@
     background: red;
 }
 
-.section-decoration {
+.section-decoration1 {
     position: absolute;
     z-index: 3;
     width: 300px;
@@ -131,55 +131,16 @@
     top: 0px;
 }
 
-.section-decoration-right-image {
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-}
 
-.section-decoration-left-image {
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-}
 
 /* ==≈=================================================================== */
 
-.hero-section-decoration{
-    position: absolute;
-    z-index: 3;
-    width: 900px;
-    height: 300px;
-    border: 5px solid black;
-    pointer-events: none;
-}
-
-.hero-section-decoration-top {
-    left: 0px;
-    top: 0px;
-}
-
-.hero-section-decoration-bottom{
-    left: 0px;
-    bottom: 0px;
-}
 
 
-.hero-section-image-sun {
-    x: 300px;
-    y: 150px;
-    width: 100px;
-    height: 100px;
-    opacity: 1;
-  
-/*  
-  x: calc(100% - 200px);
-  y: 30%;
-    width: 200px;
-    height: 200px;
-  */
-  
-}
+
+
+
+
 
 .hero-section-image-cloud1{
     x:90%;
@@ -206,17 +167,38 @@
 }
 
 
-    .svg-container {
-      width: 100%;
-      height: 180px;
-      overflow: hidden;
-      background: #0f172a;
-      z-index: 3;
-    }
+.hero-svg-container {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 300px;
+    border: 5px solid violet;
+    pointer-events: none;
+}
 
-    .svg-container svg {
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
+.hero-svg-container-top {
+    left: 0px;
+    top: 0px;
+}
+
+.hero-svg-container-bottom {
+    left: 0px;
+    bottom: 0px;
+}
+
+.hero-section-image-sun {
+    x: 300px;
+    y: 150px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+  
+/*  
+  x: calc(100% - 200px);
+  y: 30%;
+    width: 200px;
+    height: 200px;
+  */
+  
+}
 
