@@ -1,0 +1,39 @@
+<div class="svg-dock-container">
+  <!-- Left docked SVG area -->
+  <div class="svg-box left-svg">
+    <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+      <rect width="100" height="100" fill="#4f46e5" />
+    </svg>
+  </div>
+
+  <!-- Right docked SVG area -->
+  <div class="svg-box right-svg">
+    <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+      <rect width="100" height="100" fill="#ec4899" />
+    </svg>
+  </div>
+</div>
+
+
+/* The parent container dictates the responsive height */
+.svg-dock-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Forces children to match the container's height */
+  width: 100%;
+  height: 50vh; /* Example: responsive height based on viewport, or use min-height/px */
+  background-color: #f3f4f6;
+}
+
+/* Individual wrapper boxes for sizing */
+.svg-box {
+  width: 200px; /* Set your desired fixed or max width for the side panels */
+  max-width: 40%; /* Ensures they don't break on smaller screens */
+}
+
+/* Make the SVG elements fill their responsive containers completely */
+.svg-box svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
