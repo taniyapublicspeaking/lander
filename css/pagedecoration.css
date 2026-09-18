@@ -168,18 +168,10 @@
 
 .hero-section-decoration-right {
     position: absolute;
-    width: 400px;
-    height: 900px;
     border: 5px solid cyan;
     pointer-events: none;
     right: 0px;
     top: 0px;
-}
-
-.hero-section-decoration-right-image {
-    width: 100%;
-    height: 100%;
-    opacity: 0.5;
 }
 
 .hero-section-image-tree {
