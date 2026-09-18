@@ -212,16 +212,16 @@
 }
 
 .hero-section-image-cloud4 {
-    x: 700;
+    x: 700px;
     y: 60px;
     width: 400px;
     height: auto;
     opacity: 1;
 }
 
-hero-section-image-tree {
+.hero-section-image-tree {
     x: calc(100% - 250px);
-    y: 300px;
+    y: 0px;
     width: 250px;
     height: auto;
     opacity: 1;
