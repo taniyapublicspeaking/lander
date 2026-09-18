@@ -219,3 +219,10 @@
     opacity: 1;
 }
 
+hero-section-image-tree {
+    x: calc(100% - 250px);
+    y: 300px;
+    width: 250px;
+    height: auto;
+    opacity: 1;
+}
