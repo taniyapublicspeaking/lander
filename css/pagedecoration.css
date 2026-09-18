@@ -142,29 +142,7 @@
 
 
 
-.hero-section-image-cloud1{
-    x:90%;
-    y:50%;
-    width: 100px;
-    height: 100px;
-    opacity: 1;
-}
 
-.hero-section-image-cloud2{
-    x:90%;
-    y:50%;
-    width: 100px;
-    height: 100px;
-    opacity: 1;
-}
-
-.hero-section-image-cloud3{
-    x:90%;
-    y:50%;
-    width: 100px;
-    height: 100px;
-    opacity: 1;
-}
 
 
 .hero-svg-container {
@@ -182,7 +160,7 @@
 }
 
 .hero-svg-container-bottom {
-    left: 0px;
+    right: 0px;
     bottom: 0px;
 }
 
