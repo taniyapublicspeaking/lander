@@ -168,7 +168,7 @@
 
 .hero-section-decoration-right {
     position: absolute;
-    border: 5px solid cyan;
+    border: 2px solid cyan;
     pointer-events: none;
     width: 300px;
     height: 100%;
