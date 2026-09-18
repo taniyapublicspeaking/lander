@@ -166,9 +166,8 @@
 
 /* ========== */
 
-.hero-section-decoration-right {
-    position: absolute;
-    border: 2px solid cyan;
+.hero-section-svg-container-right {
+    position: absolute;    
     pointer-events: none;
     right: 0px;
     top: 0px;
