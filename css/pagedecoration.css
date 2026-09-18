@@ -222,7 +222,7 @@
 .hero-section-image-tree {
     x: calc(100% - 250px);
     y: 0px;
-    width: auto;
+    width: 600px;
     height: 600px;
     opacity: 1;
 }
