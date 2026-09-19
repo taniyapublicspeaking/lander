@@ -118,17 +118,6 @@
     left: 0px;
     top: 0px;
 }
-/*
-.hero-svg-container-right{
-    position: absolute;
-    width: 500px;
-    height: 700px;
-    border: 5px solid cyan;
-    pointer-events: none;
-    right: 0px;
-    bottom: 0px;
-}
-*/
 
 .hero-section-image-sun {
     x: 550px;
@@ -137,7 +126,6 @@
     height: auto;
     opacity: 1;
 }
-
 
 .hero-section-image-cloud1 {
     x: calc(100% - 350px);
@@ -164,6 +152,19 @@
 }
 
 /* ========== */
+
+/*
+.hero-svg-container-right{
+    position: absolute;
+    width: 500px;
+    height: 700px;
+    border: 5px solid cyan;
+    pointer-events: none;
+    right: 0px;
+    bottom: 0px;
+}
+*/
+
 
 .hero-section-svg-container-right {
     position: absolute;    
