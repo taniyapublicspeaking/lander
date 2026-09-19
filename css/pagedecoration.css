@@ -183,6 +183,8 @@
 
 .img1 {
   position: absolute; /* Docks the image relative to the section */
+  border: 5px solid red;
+
   top: 0;
   right: 0;           /* Pins to the top-right corner */
   height: 100%;       /* Fills the section height if desired */
