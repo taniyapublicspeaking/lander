@@ -79,3 +79,8 @@
     width: min(100%, 500px);
     padding: 20px;
 }
+
+hero-img {
+  position: absolute; /* 2. Removes the image from normal document flow */
+  bottom: 0;
+}
