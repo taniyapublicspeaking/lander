@@ -179,15 +179,3 @@
     height: 700px;
     opacity: 1;
 }
-
-
-.img1 {
-  position: absolute; /* Docks the image relative to the section */
-  border: 5px solid red;
-
-  top: 0;
-  right: 0;           /* Pins to the top-right corner */
-  height: 900px;       /* Fills the section height if desired */
-  width: 400px;         /* Set a fixed or relative width */
-  /* Prevents image distortion.    object-fit: cover;   */
-}
