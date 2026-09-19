@@ -187,7 +187,7 @@
 
   top: 0;
   right: 0;           /* Pins to the top-right corner */
-  height: 100%;       /* Fills the section height if desired */
-  width: 35%;         /* Set a fixed or relative width */
+  height: 500px;       /* Fills the section height if desired */
+  width: 300px;         /* Set a fixed or relative width */
   /* Prevents image distortion.    object-fit: cover;   */
 }
