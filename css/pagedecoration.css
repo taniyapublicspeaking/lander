@@ -173,8 +173,8 @@
 }
 
 .hero-section-image-tree {
-    x: calc(100% - 250px);
-    y: calc(100% - 750px);
+    x: calc(100% - 200px);
+    y: calc(100% - 700px);
     width: 200px;
     height: 700px;
     opacity: 1;
