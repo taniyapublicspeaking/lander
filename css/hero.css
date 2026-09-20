@@ -80,12 +80,12 @@
     padding: 20px;
 }
 
-.hero-img-gb{
+.hero-img-gb1{
   position: absolute; /* 2. Removes the image from normal document flow */
   bottom: 0;
 }
 
-.hero-img-tr{
+.hero-img-tr1{
   position: absolute; /* 2. Removes the image from normal document flow */
   bottom: 0;
 }
