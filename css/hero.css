@@ -74,51 +74,56 @@
 /* =========================================================
    HERO VISUAL
 =========================================================*/
-
 .hero-visual {
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
 }
 
 .hero-card {
-    width: min(100%, 500px);
-    padding: 20px;
+    position: relative;
+
+    width: 100%;
+    max-width: 600px;
+
+    /* Controls the overall visual height */
+    height: clamp(350px, 40vw, 560px);
+
+    margin-left: auto;
 }
 
-/* Both images share the same bottom */
+
+/* Both SVGs sit on exactly the same bottom line */
 .hero-card img {
     position: absolute;
-    height: auto;
+    bottom: 0;
+
     display: block;
-}
-
-/* TREE - behind and taller */
-.tree-img {
-right: -5%;
-    bottom: 0;
-    width: 110%;
-    z-index: 1;  
-}
-
-/*
-.tree-img {
-    position: absolute;
-    right: -5%;
-    bottom: 0;
-
-    width: clamp(450px, 100%, 750px);
 
     height: auto;
+}
+
+
+/* =========================================================
+   TREE - BACK LAYER
+========================================================= */
+
+.tree-img {
+    right: 0;
+
+    width: 90%;
 
     z-index: 1;
 }
-*/
 
 
-/* CHILDREN - in front */
+/* =========================================================
+   CHILDREN - FRONT LAYER
+========================================================= */
+
 .children-img {
     left: 0;
-    bottom: 0;
 
     width: 65%;
 
