@@ -84,47 +84,35 @@
 
 .hero-card {
     position: relative;
-
     width: 100%;
     max-width: 600px;
-
-    /* Controls the overall visual height */
-    height: clamp(350px, 40vw, 560px);
-
+    height: 500px;
     margin-left: auto;
+
+    isolation: isolate;
 }
 
-
-/* Both SVGs sit on exactly the same bottom line */
+/* Both images share the same bottom */
 .hero-card img {
     position: absolute;
-    bottom: 0;
-
-    display: block;
-
     height: auto;
+    display: block;
 }
 
-
-/* =========================================================
-   TREE - BACK LAYER
-========================================================= */
-
+/* TREE - behind and taller */
 .tree-img {
     right: 0;
+    bottom: 0;
 
     width: 90%;
 
     z-index: 1;
 }
 
-
-/* =========================================================
-   CHILDREN - FRONT LAYER
-========================================================= */
-
+/* CHILDREN - in front */
 .children-img {
     left: 0;
+    bottom: 0;
 
     width: 65%;
 
