@@ -153,33 +153,6 @@
 
 /* ========== */
 
-/*
-.hero-svg-container-right{
-    position: absolute;
-    width: 500px;
-    height: 700px;
-    border: 5px solid cyan;
-    pointer-events: none;
-    right: 0px;
-    bottom: 0px;
-}
-*/
-
-
-.hero-section-svg-container-right {
-    position: absolute;    
-    pointer-events: none;
-    right: 0px;
-    bottom: 0px;
-}
-
-.hero-section-image-tree {
-    /*x: 100px;
-    y: 100px;
-    width: 400px;
-    height: 600px; */
-    opacity: 1;
-}
 
 .reg-section-decoration {
     position: absolute;
