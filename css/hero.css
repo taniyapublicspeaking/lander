@@ -73,20 +73,34 @@
 .hero-visual {
     display: flex;
     justify-content: center;
+    flex: 1;
 }
 
 .hero-card {
-    width: min(100%, 500px);
-    padding: 20px;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 500px;
+    margin-left: auto;
 }
 
-.hero-img-gb{
-  /* position: absolute;  2. Removes the image from normal document flow */
-  bottom: 0;
+/* Both images are anchored to the bottom */
+.hero-card img {
+    position: absolute;
+    bottom: 0;
+    height: auto;
 }
 
-.hero-img-tr{
- /* position: absolute;  2. Removes the image from normal document flow */
-  bottom: 0;
+/* Tree goes behind */
+.tree-img {
+    right: 0;
+    width: 90%;
+    z-index: 1;
 }
 
+/* Children go in front */
+.children-img {
+    left: 0;
+    width: 65%;
+    z-index: 2;
+}
