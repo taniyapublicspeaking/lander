@@ -70,37 +70,161 @@
     font-size: 1.1rem;
 }
 
+
+/* =========================================================
+   HERO VISUAL
+========================================================= */
+
 .hero-visual {
+    width: 100%;
     display: flex;
     justify-content: center;
-    flex: 1;
+    align-items: flex-end;
 }
 
 .hero-card {
     position: relative;
+
     width: 100%;
     max-width: 600px;
-    height: 500px;
+
+    /* Controls the overall visual height */
+    height: clamp(350px, 40vw, 560px);
+
     margin-left: auto;
 }
 
-/* Both images are anchored to the bottom */
+
+/* Both SVGs sit on exactly the same bottom line */
 .hero-card img {
     position: absolute;
     bottom: 0;
+
+    display: block;
+
     height: auto;
 }
 
-/* Tree goes behind */
+
+/* =========================================================
+   TREE - BACK LAYER
+========================================================= */
+
 .tree-img {
     right: 0;
+
     width: 90%;
+
     z-index: 1;
 }
 
-/* Children go in front */
+
+/* =========================================================
+   CHILDREN - FRONT LAYER
+========================================================= */
+
 .children-img {
     left: 0;
+
     width: 65%;
+
     z-index: 2;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        min-height: auto;
+        padding: 80px 0;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 50px;
+
+        padding-top: 40px;
+    }
+
+    .hero-copy {
+        max-width: 700px;
+    }
+
+    .hero-visual {
+        width: 100%;
+    }
+
+    .hero-card {
+        width: min(100%, 600px);
+        height: clamp(350px, 65vw, 500px);
+
+        margin: 0 auto;
+    }
+
+    .tree-img {
+        width: 85%;
+        right: 0;
+    }
+
+    .children-img {
+        width: 62%;
+        left: 3%;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero-content {
+        gap: 35px;
+        padding-top: 20px;
+    }
+
+    .hero-card {
+        width: 100%;
+        height: clamp(280px, 80vw, 400px);
+    }
+
+    .tree-img {
+        width: 92%;
+        right: 0;
+    }
+
+    .children-img {
+        width: 68%;
+        left: 0;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .hero-card {
+        height: 280px;
+    }
+
+    .tree-img {
+        width: 95%;
+    }
+
+    .children-img {
+        width: 70%;
+        left: -2%;
+    }
 }
