@@ -46,6 +46,17 @@
 
 }
 
+.hero-visual img {
+    position: absolute;
+    bottom: 0;
+
+    display: block;
+
+    height: auto;
+}
+
+
+
 .hero-card {
     position: relative;
 
