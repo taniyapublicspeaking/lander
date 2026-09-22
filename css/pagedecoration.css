@@ -112,8 +112,8 @@
     position: absolute;
     /* z-index: 3; */
     width: 100%;
-    height: 300px;
-    border: 5px solid red;
+    height: 250px;
+    border: 5px solid green;
     pointer-events: none;
     /*left: 0px;*/
     top: 0px;
@@ -121,7 +121,7 @@
 
 .hero-section-image-sun {
     x: 554px;
-    y: 50px;
+    y: 30px;
     width: auto;
     height: 250px;
     opacity: 1;
@@ -136,7 +136,7 @@
 }
 
 .hero-section-image-cloud2 {
-    x: 230px;
+    x: 220px;
     y: 20px;
     width: 350px;
     height: auto;
