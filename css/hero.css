@@ -165,10 +165,17 @@
    CHILDREN - FRONT LAYER
 ========================================================= */
 
+/*.children-img {
+    left: 50%;
+    width: 25%;
+    z-index: 2;
+}*/
+
 .children-img {
-    left: -30;
-
-    width: 45%;
-
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25%;
     z-index: 2;
 }
+
