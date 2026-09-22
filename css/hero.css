@@ -29,7 +29,7 @@
     grid-template-columns: 1.05fr 0.95fr;
     align-items: center;
    
-    gap: 10px;
+    gap: 5px;
     padding-top: 10px;
 
     z-index: 2;
@@ -45,7 +45,7 @@
     max-width: 100%; /*500px;*/
 
     /* Controls the overall visual height */
-    height: clamp(300px, 30vw, 500px);
+    height: clamp(100%, 50vw, 100%);
 
     margin-left: auto;
 
@@ -160,8 +160,8 @@
 
 .tree-img {
     position: absolute;
-    left: 25%;
-    width: 70%;
+    left: 5%;
+    width: 85%;
     z-index: 1;
 }
 /* center it
@@ -190,7 +190,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 25%;
+    width: 40%;
     z-index: 2;
 }
 
