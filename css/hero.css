@@ -5,7 +5,7 @@
 .hero {
     position: relative;
 
-min-height: 1000px;
+    min-height: 1000px;
    
     display: flex;
     align-items: center;
@@ -24,8 +24,7 @@ min-height: 1000px;
 
 .hero-content {
     position: relative;
-    z-index: 2;
-
+   
     display: grid;
     grid-template-columns: 1.05fr 0.95fr;
     align-items: center;
@@ -33,11 +32,15 @@ min-height: 1000px;
     gap: 10px;
     padding-top: 10px;
 
+    z-index: 2;
+   
    border: 2px solid green;
 }
 
 .hero-copy {
     max-width: 680px;
+      border: 2px solid orange;
+
 }
 
 .hero-copy h1 {
