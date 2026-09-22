@@ -38,7 +38,18 @@
 }
 
 .hero-visual {
+
+    position: relative;
+
     width: 100%;
+    max-width: 600px;
+
+    /* Controls the overall visual height */
+    height: clamp(300px, 30vw, 500px);
+
+    margin-left: auto;
+
+   
     /*display: flex;
     justify-content: center;
     align-items: flex-end;*/
