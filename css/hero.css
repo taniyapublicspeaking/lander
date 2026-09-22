@@ -151,14 +151,29 @@
 /* =========================================================
    TREE - BACK LAYER
 ========================================================= */
+/*
+.tree-img {
+    right: 25%;
+    width: 100%;
+    z-index: 1;
+}*/
 
 .tree-img {
-    right: 0;
-
-    width: 130%;
-
+    position: absolute;
+    right: 25%;
+    width: 100%;
     z-index: 1;
 }
+/* center it
+.tree-img {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    z-index: 1;
+}*/
+
+
 
 
 /* =========================================================
