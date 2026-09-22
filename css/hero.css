@@ -37,12 +37,36 @@
    border: 2px solid green;
 }
 
+.hero-visual {
+    width: 100%;
+    /*display: flex;
+    justify-content: center;
+    align-items: flex-end;*/
+   border: 2px solid violet;
+
+}
+
+.hero-card {
+    position: relative;
+
+    width: 100%;
+    max-width: 600px;
+
+    /* Controls the overall visual height */
+    height: clamp(300px, 30vw, 500px);
+
+    margin-left: auto;
+      border: 2px solid cyan;
+
+}
+
+
 .hero-copy {
    
    max-width: 700px; /*680px;*/
    border: 2px solid orange;
-   padding-top: 100px;
-   padding-bottom: 100px;
+   padding-top: 70px;
+   padding-bottom: 50px;
 
 }
 
@@ -84,28 +108,9 @@
 /* =========================================================
    HERO VISUAL
 =========================================================*/
-.hero-visual {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-   border: 2px solid violet;
 
-}
 
-.hero-card {
-    position: relative;
 
-    width: 100%;
-    max-width: 600px;
-
-    /* Controls the overall visual height */
-    height: clamp(300px, 30vw, 500px);
-
-    margin-left: auto;
-      border: 2px solid cyan;
-
-}
 
 
 /* Both SVGs sit on exactly the same bottom line */
