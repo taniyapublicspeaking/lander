@@ -4,11 +4,11 @@
 
 .hero {
     position: relative;
-    min-height: 600px;
 
+min-height: 1000px;
+   
     display: flex;
     align-items: center;
-
     overflow: hidden;
 
     background:
@@ -30,8 +30,8 @@
     grid-template-columns: 1.05fr 0.95fr;
     align-items: center;
    
-    gap: 500px;
-    padding-top: 500px;
+    gap: 10px;
+    padding-top: 10px;
 
    border: 2px solid green;
 }
