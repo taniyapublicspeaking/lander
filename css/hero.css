@@ -91,7 +91,7 @@
     position: relative;
 
     width: 100%;
-    /* max-width: 900px;*/
+    max-width: 600px;
 
     /* Controls the overall visual height */
     height: clamp(300px, 30vw, 500px);
@@ -118,7 +118,7 @@
 ========================================================= */
 
 .tree-img {
-    right: -10;
+    right: 0;
 
     width: 130%;
 
