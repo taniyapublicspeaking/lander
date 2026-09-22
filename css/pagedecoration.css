@@ -121,7 +121,7 @@
 
 .hero-section-image-sun {
     x: 554px;
-    y: 10px;
+    y: 30px;
     width: 250px;
     height: auto;
     opacity: 1;
@@ -136,7 +136,7 @@
 }
 
 .hero-section-image-cloud2 {
-    x: 250px;
+    x: 230px;
     y: 20px;
     width: 350px;
     height: auto;
