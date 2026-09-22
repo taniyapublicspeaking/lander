@@ -45,7 +45,7 @@
     max-width: 100%; /*500px;*/
 
     /* Controls the overall visual height */
-    height: clamp(100%, 50vw, 100%);
+    height: clamp(50%, 50vw, 80%);
 
     margin-left: auto;
 
@@ -53,7 +53,7 @@
     /*display: flex;
     justify-content: center;
     align-items: flex-end;*/
-   border: 2px solid blue;
+   border: 2px solid cyan;
    z-index: 0;
 
 
