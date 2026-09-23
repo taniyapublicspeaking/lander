@@ -47,7 +47,7 @@
     /* Controls the overall visual height */
     height: clamp(450px, 50vw, 600px);
 
-    margin-left: auto;
+    /*margin-left: auto;*/
 
    
 
