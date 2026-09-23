@@ -4,13 +4,10 @@
 
 .hero {
     position: relative;
-
-    min-height: 700px;
-   
+    min-height: 700px;   
     display: flex;
     align-items: center;
     overflow: hidden;
-
     background:
         linear-gradient(
             135deg,
@@ -23,17 +20,13 @@
 }
 
 .hero-content {
-    position: relative;
-   
+    position: relative;   
     display: grid;
     grid-template-columns: 1.05fr 0.95fr;
-    align-items: center;
-   
+    align-items: center;   
     gap: 5px;
     padding-top: 10px;
-
-    z-index: 2;
-   
+    z-index: 2;   
    border: 2px solid green;
 }
 
@@ -64,30 +57,11 @@
     height: auto;
 }
 
-
-
-.hero-card {
-    position: relative;
-
-    width: 100%;
-    max-width: 600px;
-
-    /* Controls the overall visual height */
-    height: clamp(300px, 30vw, 500px);
-
-    margin-left: auto;
-      border: 2px solid cyan;
-
-}
-
-
-.hero-copy {
-   
+.hero-copy {   
    max-width: 700px; /*680px;*/
    border: 2px solid orange;
    padding-top: 70px;
    padding-bottom: 50px;
-
 }
 
 .hero-copy h1 {
@@ -101,18 +75,13 @@
 
 .hero-age {
     display: inline-block;
-
     margin-bottom: 20px;
     padding: 8px 15px;
-
     color: var(--navy);
     background: var(--white);
-
     border-radius: 999px;
-
     font-size: 0.9rem;
     font-weight: 700;
-
     box-shadow:
         0 8px 25px rgba(15, 23, 42, 0.06);
 }
@@ -120,39 +89,8 @@
 .hero-description {
     max-width: 580px;
     margin-bottom: 30px;
-
     font-size: 1.1rem;
 }
-
-
-/* =========================================================
-   HERO VISUAL
-=========================================================*/
-
-
-
-
-
-/* Both SVGs sit on exactly the same bottom line */
-.hero-card img {
-    position: absolute;
-    bottom: 0;
-
-    display: block;
-
-    height: auto;
-}
-
-
-/* =========================================================
-   TREE - BACK LAYER
-========================================================= */
-/*
-.tree-img {
-    right: 25%;
-    width: 100%;
-    z-index: 1;
-}*/
 
 .tree-img {
     position: absolute;
@@ -160,27 +98,6 @@
     width: 85%;
     z-index: 1;
 }
-/* center it
-.tree-img {
-    position: absolute;
-    left: 50%;
-    width: 100%;
-    transform: translateX(-50%);
-    z-index: 1;
-}*/
-
-
-
-
-/* =========================================================
-   CHILDREN - FRONT LAYER
-========================================================= */
-
-/*.children-img {
-    left: 50%;
-    width: 25%;
-    z-index: 2;
-}*/
 
 .children-img {
     position: absolute;
