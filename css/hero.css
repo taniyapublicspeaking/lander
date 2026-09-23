@@ -33,21 +33,13 @@
 .hero-visual {
 
     position: relative;
-
     /*width: 100%;*/
     max-width: 700px; /*500px;*/
-
     /* Controls the overall visual height */
     height: clamp(450px, 50vw, 600px);
-
     /*margin-left: auto;*/
-
-   
-
    border: 2px solid red;
    z-index: 0;
-
-
 }
 
 .hero-visual img {
