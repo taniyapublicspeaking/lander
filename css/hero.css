@@ -30,16 +30,29 @@
    border: 2px solid green;
 }
 
-.hero-visual {
+.hero-copy {   
+   position: relative; /*new*/
+   max-width: 700px; /*680px;*/
+   padding-top: 70px;
+   padding-bottom: 50px;
 
+   border: 2px solid orange;
+
+}
+
+.hero-visual {
     position: relative;
-    /*width: 100%;*/
-    max-width: 700px; /*500px;*/
+    max-width: 650px; /*500px;*/
     /* Controls the overall visual height */
     height: clamp(450px, 50vw, 600px);
-    /*margin-left: auto;*/
-   border: 2px solid red;
+    border: 2px solid red;
+   
    z-index: 0;
+   
+    /*width: 100%;*/
+    /*margin-left: auto;*/
+
+   
 }
 
 .hero-visual img {
@@ -47,13 +60,6 @@
     bottom: 0;
     display: block;
     height: auto;
-}
-
-.hero-copy {   
-   max-width: 700px; /*680px;*/
-   border: 2px solid orange;
-   padding-top: 70px;
-   padding-bottom: 50px;
 }
 
 .hero-copy h1 {
