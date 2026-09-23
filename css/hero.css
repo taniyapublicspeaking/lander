@@ -42,10 +42,10 @@
 
 .hero-visual {
     position: relative;
-    max-width: 650px; /*500px;*/
+    max-width: 600px; /*500px;*/
     /* Controls the overall visual height */
-    height: clamp(450px, 50vw, 600px);
-    border: 2px solid red;
+    height: clamp(300px, 50vw, 600px);
+    border: 2px solid black;
    
    z-index: 0;
    
