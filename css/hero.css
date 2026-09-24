@@ -45,7 +45,7 @@
     max-width: 600px; /*500px;*/
     /* Controls the overall visual height */
     height: clamp(300px, 50vw, 500px);
-    border: 2px solid red;
+    border: 2px solid black;
    
    z-index: 0;
    
@@ -91,7 +91,7 @@
 
 .tree-img {
     position: absolute;
-    left: 35%;
+    left: 14%;
     width: 76%;
     z-index: 1;
        height: auto;
@@ -100,7 +100,7 @@
 
 .tree-img2 {
     position: absolute;
-    left: 10%;
+    left: 25%;
     width: 65%;
     z-index: 1;
        height: auto;
