@@ -56,3 +56,9 @@
     display: flex;
     justify-content: center;
 }
+
+.registration-gift{
+    transform: scaleX(-1);
+    display: block;
+    margin: 0 auto;
+}
