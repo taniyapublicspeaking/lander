@@ -29,6 +29,11 @@
     border-radius: var(--radius);
 }
 
+.registration-box div {
+    border: 2px solid black;
+}
+
+
 .registration-content {
     position: relative;
     z-index: 2;
