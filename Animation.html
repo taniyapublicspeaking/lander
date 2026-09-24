@@ -1,0 +1,47 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="800"
+  height="800"
+  viewBox="0 0 800 800">
+
+  <defs>
+    <!-- Put the orange ring artwork here -->
+    <g id="orange-ring">
+      <!-- Paste the contents of ringorange1.svg's artwork here -->
+    </g>
+
+    <!-- Put the blue ring artwork here -->
+    <g id="blue-ring">
+      <!-- Paste the contents of ringblue1.svg's artwork here -->
+    </g>
+  </defs>
+
+  <!-- ORANGE: slow clockwise rotation -->
+  <g transform="translate(400 400)">
+    <g>
+      <use href="#orange-ring" transform="translate(-400 -400)"/>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="0"
+        to="360"
+        dur="20s"
+        repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- BLUE: slow counter-clockwise rotation -->
+  <g transform="translate(400 400)">
+    <g>
+      <use href="#blue-ring" transform="translate(-400 -400)"/>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="0"
+        to="-360"
+        dur="20s"
+        repeatCount="indefinite"/>
+    </g>
+  </g>
+
+</svg>
