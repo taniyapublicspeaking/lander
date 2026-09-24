@@ -90,11 +90,11 @@
 
 .tree-img {
     position: absolute;
-    left: 25%;
+    left: 15%;
     width: 120%;
     z-index: 1;
        height: auto;
-       top: 0px;
+       bottom: 0px;
 
 
 }
