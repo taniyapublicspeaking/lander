@@ -44,8 +44,8 @@
     position: relative;
     max-width: 600px; /*500px;*/
     /* Controls the overall visual height */
-    height: clamp(300px, 50vw, 600px);
-    border: 2px solid black;
+    height: clamp(300px, 50vw, 500px);
+    border: 2px solid blue;
    
    z-index: 0;
    
