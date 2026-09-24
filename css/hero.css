@@ -101,13 +101,11 @@
 
 .children-img {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 45%;
+    transform: translateX(-45%);
     width: 40%;
     z-index: 2;
        height: auto;
-       bottom:  -250px;
-
-
+       bottom:  -50px;
 }
 
