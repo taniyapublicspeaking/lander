@@ -29,10 +29,6 @@
     border-radius: var(--radius);
 }
 
-.registration-box div {
-    border: 2px solid black;
-}
-
 
 .registration-content {
     position: relative;
@@ -157,10 +153,12 @@
 
 .registration-gift {
     display: block;
-    width: 120px;
+    width: 30%;
     max-width: 100%;
     height: auto;
     margin: 20px auto;
+    transform: scaleX(-1);
+
 }
 
 
