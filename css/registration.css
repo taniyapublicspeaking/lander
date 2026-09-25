@@ -57,8 +57,14 @@
     justify-content: center;
 }
 
-.registration-gift{
-    transform: scaleX(-1);
+.registration-gift {
+   transform: scaleX(-1);
     display: block;
-    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    max-width: 30vw;
+    object-fit: contain;
+    margin: 20px auto 25px;
 }
+
+
