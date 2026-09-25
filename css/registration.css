@@ -60,8 +60,8 @@
 .registration-gift {
    transform: scaleX(-1);
     display: block;
-    width: 120px;
-    height: 120px;
+    width: 30%;
+    height: 30%;
     max-width: 30vw;
     object-fit: contain;
     margin: 20px auto 25px;
