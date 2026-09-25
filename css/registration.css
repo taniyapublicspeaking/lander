@@ -67,7 +67,140 @@
     margin: 0 auto;
 }
 
-registration-gift-text {
-   text-align: center;
+/*==========*/
+
+/* ========================================
+   REGISTRATION SECTION
+   ======================================== */
+
+.registration-section {
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    text-align: center;
 }
+
+
+/* ========================================
+   CONTAINER
+   ======================================== */
+
+.registration-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* ========================================
+   REGISTRATION BOX
+   ======================================== */
+
+.registration-box {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* ========================================
+   CONTENT
+   ======================================== */
+
+.registration-content {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* ========================================
+   EYEBROW
+   ======================================== */
+
+.registration-eyebrow {
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.registration-eyebrow p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+/* ========================================
+   HEADING
+   ======================================== */
+
+.registration-heading {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.registration-heading h2 {
+    margin: 0 auto 20px;
+    padding: 0;
+    text-align: center;
+}
+
+.registration-heading h2 span {
+    display: inline;
+}
+
+
+/* ========================================
+   GIFT IMAGE
+   ======================================== */
+
+.registration-gift {
+    display: block;
+    width: 120px;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+
+/* ========================================
+   DESCRIPTION
+   ======================================== */
+
+.registration-description {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.registration-description p {
+    margin: 0 auto 15px;
+    padding: 0;
+    text-align: center;
+}
+
+.registration-description p:nth-child(2) {
+    margin-bottom: 25px;
+}
+
+
+/* ========================================
+   REGISTRATION BUTTON
+   ======================================== */
+
+.registration-button {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 14px 28px;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+}
+
+.registration-button span {
+    margin-left: 8px;
+}
+
 
