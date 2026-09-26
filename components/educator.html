@@ -18,20 +18,72 @@
      
 <svg viewBox="0 0 200 200" aria-hidden="true">
 
-<image href="images/ringblue1.svg" x="0" y="0" width="180" height="180" preserveAspectRatio="xMidYMid meet"/>                         
-<image href="images/ringorange1.svg" x="0" y="0" width="180" height="180" preserveAspectRatio="xMidYMid meet"/>
-  
+  <!-- BLUE RING -->
+  <image
+    href="images/ringblue1.svg"
+    x="0"
+    y="0"
+    width="180"
+    height="180"
+    preserveAspectRatio="xMidYMid meet">
+
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 100 100"
+      to="360 100 100"
+      dur="20s"
+      repeatCount="indefinite"/>
+  </image>
+
+
+  <!-- ORANGE RING -->
+  <image
+    href="images/ringorange1.svg"
+    x="0"
+    y="0"
+    width="180"
+    height="180"
+    preserveAspectRatio="xMidYMid meet">
+
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="360 100 100"
+      to="0 100 100"
+      dur="30s"
+      repeatCount="indefinite"/>
+  </image>
+
+
+  <!-- PROFILE CLIP -->
   <defs>
     <clipPath id="profileClip">
       <circle cx="100" cy="100" r="95"/>
     </clipPath>
-  </defs> 
+  </defs>
 
-                           
-  <image href="images/profiletr.png" x="1" y="1" width="210" height="210" preserveAspectRatio="xMidYMid slice" clip-path="url(#profileClip)"/>
-  
-  <circle cx="100" cy="100" r="95" fill="none" stroke="#ffffff" stroke-width="4"  />
-                               
+
+  <!-- PROFILE IMAGE -->
+  <image
+    href="images/profiletr.png"
+    x="1"
+    y="1"
+    width="210"
+    height="210"
+    preserveAspectRatio="xMidYMid slice"
+    clip-path="url(#profileClip)"/>
+
+
+  <!-- WHITE BORDER -->
+  <circle
+    cx="100"
+    cy="100"
+    r="95"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="4"/>
+
 </svg>
      
 </div>
