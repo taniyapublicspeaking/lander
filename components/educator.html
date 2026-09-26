@@ -19,41 +19,65 @@
 <svg viewBox="0 0 200 200" aria-hidden="true">
 
   <!-- BLUE RING -->
-  <image
-    href="images/ringblue1.svg"
-    x="0"
-    y="0"
-    width="180"
-    height="180"
-    preserveAspectRatio="xMidYMid meet">
+  <g>
+    <image
+      href="images/ringblue1.svg"
+      x="10"
+      y="10"
+      width="180"
+      height="180"
+      preserveAspectRatio="xMidYMid meet">
 
-    <animateTransform
-      attributeName="transform"
-      type="rotate"
-      from="0 100 100"
-      to="360 100 100"
-      dur="20s"
-      repeatCount="indefinite"/>
-  </image>
+      <!-- Rotation -->
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="0 100 100; 360 100 100"
+        dur="20s"
+        repeatCount="indefinite"/>
+
+      <!-- Expansion / contraction -->
+      <animateTransform
+        attributeName="transform"
+        type="scale"
+        values="1; 1.08; 1"
+        dur="8s"
+        repeatCount="indefinite"
+        additive="sum"/>
+
+    </image>
+  </g>
 
 
   <!-- ORANGE RING -->
-  <image
-    href="images/ringorange1.svg"
-    x="0"
-    y="0"
-    width="180"
-    height="180"
-    preserveAspectRatio="xMidYMid meet">
+  <g>
+    <image
+      href="images/ringorange1.svg"
+      x="10"
+      y="10"
+      width="180"
+      height="180"
+      preserveAspectRatio="xMidYMid meet">
 
-    <animateTransform
-      attributeName="transform"
-      type="rotate"
-      from="360 100 100"
-      to="0 100 100"
-      dur="30s"
-      repeatCount="indefinite"/>
-  </image>
+      <!-- Rotation in opposite direction -->
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="360 100 100; 0 100 100"
+        dur="28s"
+        repeatCount="indefinite"/>
+
+      <!-- Expansion / contraction -->
+      <animateTransform
+        attributeName="transform"
+        type="scale"
+        values="1; 1.12; 1"
+        dur="10s"
+        repeatCount="indefinite"
+        additive="sum"/>
+
+    </image>
+  </g>
 
 
   <!-- PROFILE CLIP -->
@@ -64,7 +88,7 @@
   </defs>
 
 
-  <!-- PROFILE IMAGE -->
+  <!-- PROFILE -->
   <image
     href="images/profiletr.png"
     x="1"
