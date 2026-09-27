@@ -175,4 +175,103 @@
     margin-left: 8px;
 }
 
+/*===========================*/
+
+.educator-image {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+/* Animated background */
+.animated-bg {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    background: transparent;
+    z-index: 0;
+}
+
+/* Abstract shapes */
+.shape {
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    filter: blur(2px);
+    opacity: 0.35;
+}
+
+/* Shape 1 */
+.shape-1 {
+    width: 250px;
+    height: 250px;
+    background: #4facfe;
+    top: -70px;
+    left: -60px;
+    animation: float1 10s ease-in-out infinite;
+}
+
+/* Shape 2 */
+.shape-2 {
+    width: 200px;
+    height: 200px;
+    background: #ff7b54;
+    right: -50px;
+    bottom: -40px;
+    animation: float2 12s ease-in-out infinite;
+}
+
+/* Shape 3 */
+.shape-3 {
+    width: 150px;
+    height: 150px;
+    background: #9b5de5;
+    right: 20%;
+    top: 30%;
+    animation: float3 8s ease-in-out infinite;
+}
+
+/* Keep educator image above background */
+.educator-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Animations */
+@keyframes float1 {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate(80px, 50px) scale(1.2);
+    }
+}
+
+@keyframes float2 {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate(-70px, -60px) scale(1.15);
+    }
+}
+
+@keyframes float3 {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate(-50px, 70px) scale(1.3);
+    }
+}
+
 
