@@ -36,23 +36,6 @@
    z-index: 2;
 }
 
-/* Keep educator image above background */
-.educator-image1 img {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.educator-image1 {
-    position: relative;
-    aspect-ratio: 1 / 1;
-    overflow: hidden;
-    border-radius: 30px;
-}
-
-
 .educator-placeholder {
     width: min(100%, 280px);
 }
