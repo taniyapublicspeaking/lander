@@ -151,20 +151,15 @@
 
 /* Animations */
 @keyframes float1 {
-    0% {
+    0%,100% {
         transform: translate(0, 0) scale(0.8);
-       background-color: #4facfe;
+       background-color: var(--off-white);
     }
 
     50% {
         transform: translate(80px, 50px) scale(1.5);
-       background-color: #ff7b54;
-    }
-   
-    100% {
-        transform: translate(80px, 50px) scale(0.8);
-       background-color: #4facfe;
-    }
+       background-color: var(--orange-light);
+    }  
    
 }
 
