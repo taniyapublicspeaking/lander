@@ -121,7 +121,7 @@
 .shape-1 {
     width: 250px;
     height: 250px;
-    background: #4facfe;
+    background: var(--blue-light);
     top: -70px;
     left: -60px;
     animation: float1 10s ease-in-out infinite;
@@ -131,7 +131,7 @@
 .shape-2 {
     width: 200px;
     height: 200px;
-    background: #ff7b54;
+    background: var(--orange-light);
     right: -50px;
     bottom: -40px;
     animation: float2 12s ease-in-out infinite;
@@ -141,7 +141,7 @@
 .shape-3 {
     width: 150px;
     height: 150px;
-    background: #9b5de5;
+    background: var(--off-white);
     right: 20%;
     top: 30%;
     animation: float3 8s ease-in-out infinite;
