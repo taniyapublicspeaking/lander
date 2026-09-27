@@ -121,7 +121,7 @@
 .shape-1 {
     width: 250px;
     height: 250px;
-    background: var(--blue-light);
+    background: #4facfe;
     top: -70px;
     left: -60px;
     animation: float1 10s ease-in-out infinite;
@@ -152,12 +152,20 @@
 /* Animations */
 @keyframes float1 {
     0%, 100% {
-        transform: translate(0, 0) scale(1);
+        transform: translate(0, 0) scale(0.8);
+       background-color: #4facfe;
     }
 
     50% {
-        transform: translate(80px, 50px) scale(1.2);
+        transform: translate(80px, 50px) scale(1.5);
+       background-color: #ff7b54;
     }
+   
+    100% {
+        transform: translate(80px, 50px) scale(0.8);
+       background-color: #4facfe;
+    }
+   
 }
 
 @keyframes float2 {
