@@ -151,7 +151,7 @@
 
 /* Animations */
 @keyframes float1 {
-    0%, 100% {
+    0% {
         transform: translate(0, 0) scale(0.8);
        background-color: #4facfe;
     }
