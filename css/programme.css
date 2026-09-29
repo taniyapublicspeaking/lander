@@ -63,3 +63,18 @@
     color: var(--navy);
     font-weight: 700;
 }
+
+
+/*===========*/
+
+.shapeP {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 12px solid #4facfe;
+    background: transparent;
+    box-sizing: border-box;
+    opacity: 0.5;
+}
+
