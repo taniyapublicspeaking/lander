@@ -109,12 +109,20 @@
 }
 
 
-
-
-.children-img {
+.children-imgbak {
     position: absolute;
     left: 65%;
     transform: translateX(-65%);
+    width: 65%;
+    z-index: 2;
+   height: auto;
+   bottom: 0px;
+}
+
+.children-img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     width: 65%;
     z-index: 2;
    height: auto;
