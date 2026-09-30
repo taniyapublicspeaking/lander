@@ -171,3 +171,37 @@
     margin-left: 8px;
 }
 
+/*=====*/
+
+.registration-section h2 {
+    animation: headingReveal 1s ease-out both;
+}
+
+.registration-section h2 span {
+    display: inline-block;
+    animation: giftReveal 1s ease-out 0.4s both;
+}
+
+@keyframes headingReveal {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes giftReveal {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
