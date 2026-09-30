@@ -43,12 +43,12 @@
 
 .hero-visual {
     position: relative;
-    max-width: 600px; /*500px;*/
+    /*max-width: 600px; /*500px;*/
     /* Controls the overall visual height */
-    height: clamp(300px, 50vw, 500px);
+   /* height: clamp(300px, 50vw, 500px);*/
     /* border: 2px solid black;*/
    
-   z-index: 0;
+  /* z-index: 0;*/
    
     /*width: 100%;*/
     /*margin-left: auto;*/
