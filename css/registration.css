@@ -127,11 +127,11 @@
 
 .registration-gift {
     display: block;
-    width: 30%;
+    width: 50%;
     max-width: 100%;
     height: auto;
     margin: 20px auto;
-    transform: scaleX(-1);
+    /*transform: scaleX(-1);*/
 
 }
 
