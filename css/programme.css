@@ -64,6 +64,17 @@
     font-weight: 700;
 }
 
+.programme-pod {
+    display: block;
+    width: 60%;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    transform: scaleX(-1);
+
+}
+
+
 
 /*===========*/
 
