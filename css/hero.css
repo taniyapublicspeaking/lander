@@ -20,12 +20,11 @@
 }
 
 .hero-content {
-    /*position: relative;   */
     display: grid;
     grid-template-columns: 1.05fr 0.95fr;
     align-items: center;   
-    /*gap: 5px;*/
-    /*padding-top: 10px;*/
+    gap: 5px;
+    padding-top: 10px;
     /*z-index: 2;   */
    /* border: 2px solid green;*/
 }
