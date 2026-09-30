@@ -20,15 +20,24 @@
 }
 
 .hero-content {
-    position: relative;   
+    /*position: relative;   */
     display: grid;
     grid-template-columns: 1.05fr 0.95fr;
     align-items: center;   
-    gap: 5px;
-    padding-top: 10px;
-    z-index: 2;   
+    /*gap: 5px;*/
+    /*padding-top: 10px;*/
+    /*z-index: 2;   */
    /* border: 2px solid green;*/
 }
+
+.programme-layout {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 80px;
+}
+
+
 
 .hero-copy {   
    position: relative; /*new*/
