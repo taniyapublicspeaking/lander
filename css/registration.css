@@ -125,16 +125,13 @@
    GIFT IMAGE
    ======================================== */
 
-.registration-gift {
-    display: block;
-    width: 50%;
-    max-width: 100%;
+.i-gpconfi {
+    max-width: 500px;
     height: auto;
-    margin: 20px auto;
-    /*transform: scaleX(-1);*/
-
+    display: block;
+    margin: 0 auto;
+    width: min(90%, 500px);
 }
-
 
 /* ========================================
    DESCRIPTION
