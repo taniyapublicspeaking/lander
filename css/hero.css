@@ -79,3 +79,23 @@
     margin: 0 auto;
     width: min(90%, 400px);
 }
+
+.hero h1 {
+    animation: heroHeading 1.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes heroHeading {
+    0% {
+        opacity: 0;
+        transform: translateY(35px) scale(0.95);
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
