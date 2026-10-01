@@ -49,7 +49,7 @@
     }
 
     .programme-visual {
-        order: -1; /*-1;*/
+        order: 5; /*-1;*/
     }
 
     .educator-card {
