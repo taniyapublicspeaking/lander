@@ -65,9 +65,9 @@
 }
 
 .i-gppsk {
-    max-width: 500px;
+    max-width: 350px;
     height: auto;
     display: block;
     margin: 0 auto;
-    width: min(90%, 500px);
+    width: min(90%, 350px);
 }
