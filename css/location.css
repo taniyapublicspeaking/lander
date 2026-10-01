@@ -39,3 +39,11 @@
     display: flex;
     justify-content: center;
 }
+
+.i-gploc2 {
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    width: min(90%, 350px);
+}
