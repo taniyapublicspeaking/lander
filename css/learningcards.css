@@ -47,3 +47,11 @@
     margin-bottom: 0;
     font-size: 0.95rem;
 }
+
+.icon-cards {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    width: min(90%, 400px);
+}
