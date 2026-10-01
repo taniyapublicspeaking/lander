@@ -43,11 +43,9 @@
     width: 100%;
     margin: 0 auto;
     text-align: center;
-
-
-
     padding: 65px;
     overflow: hidden;
+   
     background:
         linear-gradient(
             135deg,
@@ -57,6 +55,9 @@
 
     border-radius: var(--radius);
 
+border: 2px solid var(--orange);
+/*border: 2px solid rgba(255, 140, 0, 0.3);*/
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
    
 }
 
@@ -169,39 +170,4 @@
 
 .registration-button span {
     margin-left: 8px;
-}
-
-/*=====*/
-
-.registration-section h2 {
-    animation: headingReveal 1s ease-out both;
-}
-
-.registration-section h2 span {
-    display: inline-block;
-    animation: giftReveal 1s ease-out 0.4s both;
-}
-
-@keyframes headingReveal {
-    from {
-        opacity: 0;
-        transform: translateY(25px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes giftReveal {
-    from {
-        opacity: 0;
-        transform: scale(0.8);
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
 }
