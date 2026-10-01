@@ -73,9 +73,9 @@
 }
 
 .i-gpcw {
-    max-width: 400px;
+    max-width: 350px;
     height: auto;
     display: block;
     margin: 0 auto;
-    width: min(90%, 400px);
+    width: min(90%, 350px);
 }
