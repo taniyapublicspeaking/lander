@@ -48,9 +48,9 @@
 }
 
 .icon-cards {
-    max-width: 280px;
+    max-width: 250px;
     height: auto;
     display: block;
     margin: 0 auto;
-    width: min(90%, 280px);
+    width: min(90%, 250px);
 }
