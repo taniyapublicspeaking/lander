@@ -28,7 +28,7 @@
     display: block;
     margin: 0 auto;
     width: min(90%, 350px);
-border: 2px solid green;
+    border: 2px solid green;
    
 }
 
@@ -64,3 +64,26 @@ border: 2px solid green;
 .svg-borderloc {
     border: 2px solid yellow;
 }
+
+.location-box {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 65px;
+    overflow: hidden;
+   
+    background:
+        linear-gradient(
+            135deg,
+            var(--orange-light),
+            #ffffff
+        );
+
+    border-radius: var(--radius);
+
+border: 2px solid var(--orange);
+/*border: 2px solid rgba(255, 140, 0, 0.3);*/
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+   
+}
+
