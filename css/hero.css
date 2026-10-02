@@ -16,17 +16,18 @@
             #fff7ed 100%
         );
 
-  border: 2px solid red;
+  /*border: 2px solid red;*/
 }
 
 .hero-content {
     display: grid;
     grid-template-columns: 1.05fr 0.95fr;
     align-items: center;   
-    gap: 1px;
+    gap: 30px;
     padding-top: 90px;
+   
     /*z-index: 2;   */
-   border: 2px solid green;
+   /*border: 2px solid green;*/
 }
 
 
@@ -36,7 +37,7 @@
    padding-top: 1px;
    padding-bottom: 1px;
 
-  border: 2px solid orange;
+  /*border: 2px solid orange;*/
 
 }
 
