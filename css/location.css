@@ -44,7 +44,7 @@
     width: min(90%, 250px);
 }
 
-.svg-borderloc-Off {
+.svg-borderloc {
     border: 2px solid yellow;
 }
 
