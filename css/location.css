@@ -37,11 +37,11 @@
 }
 
 .i-gploc2 {
-    max-width: 250px;
+    max-width: 150px;
     height: auto;
     display: block;
     margin: 0 auto;
-    width: min(90%, 250px);
+    width: min(90%, 150px);
 }
 
 .svg-borderloc {
