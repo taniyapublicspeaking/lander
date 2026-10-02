@@ -4,7 +4,7 @@
 
 .location-section {
    
-    padding: 80px 0;
+    padding: 10px 0;
     color: var(--white);
     background: var(--white);
    
@@ -14,7 +14,13 @@
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
-    gap: 50px;
+    gap: 0px;
+}
+
+.location-content {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .location-content h2 {
@@ -37,11 +43,11 @@
 }
 
 .i-gploc2 {
-    max-width: 350px;
+    max-width: 250px;
     height: auto;
     display: block;
     margin: 0 auto;
-    width: min(90%, 350px);
+    width: min(90%, 250px);
 }
 
 .svg-borderloc-Off {
@@ -70,11 +76,3 @@ border: 2px solid var(--yellow);
 box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
    
 }
-
-.location-content {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-
