@@ -23,7 +23,11 @@
 }
 
 .location-visual {
-   
+   max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    width: min(90%, 350px);
 border: 2px solid green;
    
 }
