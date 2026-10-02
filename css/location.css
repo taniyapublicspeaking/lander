@@ -87,3 +87,10 @@ box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
    
 }
 
+.location-content {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
