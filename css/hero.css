@@ -23,8 +23,8 @@
     display: grid;
     grid-template-columns: 1.05fr 0.95fr;
     align-items: center;   
-    gap: 5px;
-    padding-top: 10px;
+    gap: 1px;
+    padding-top: 1px;
     /*z-index: 2;   */
    /* border: 2px solid green;*/
 }
@@ -33,8 +33,8 @@
 .hero-copy {   
    position: relative; /*new*/
    max-width: 700px; /*680px;*/
-   padding-top: 70px;
-   padding-bottom: 50px;
+   padding-top: 1px;
+   padding-bottom: 1px;
 
   /* border: 2px solid orange;*/
 
