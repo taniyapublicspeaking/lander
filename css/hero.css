@@ -24,7 +24,7 @@
     grid-template-columns: 1.05fr 0.95fr;
     align-items: center;   
     gap: 1px;
-    padding-top: 1px;
+    padding-top: 90px;
     /*z-index: 2;   */
    border: 2px solid green;
 }
