@@ -26,6 +26,11 @@
   border: 5px solid yellow;
 }
 
+.div-container-info article {
+  border: 5px solid black;
+}
+
+
 .educator-card2 {
     display: grid;
     grid-template-columns: 0.7fr 1.3fr;
