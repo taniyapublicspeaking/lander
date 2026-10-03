@@ -2,7 +2,7 @@ const orb = document.getElementById("orb");
 const surface = document.querySelector(".orb-surface");
 const container = document.querySelector(".orb-background");
 
-/* =========================================
+/* ========================================
    SETTINGS
    ========================================= */
 
