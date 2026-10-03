@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* =========================================
+   BACKGROUND
+   ========================================= */
+
+.orb-background {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eff6ff 0%,
+            #ffffff 55%,
+            #fff7ed 100%
+        );
+
+    /* CUSTOMIZE COLOURS HERE */
+    --orb-highlight: #ffffff;
+    --orb-light: #72b7ff;
+    --orb-main: #2674e8;
+    --orb-dark: #0d347d;
+    --orb-text: #ffffff;
+
+    /* Surface pattern colours */
+    --surface-light: rgba(255, 255, 255, 0.18);
+    --surface-dark: rgba(0, 25, 90, 0.28);
+}
+
+/* =========================================
+   ORB
+   ========================================= */
+
+.orb {
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 32% 25%,
+            var(--orb-highlight) 0%,
+            var(--orb-light) 18%,
+            var(--orb-main) 55%,
+            var(--orb-dark) 100%
+        );
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.22),
+        inset -18px -15px 30px rgba(0, 0, 0, 0.25),
+        inset 12px 10px 22px rgba(255, 255, 255, 0.30);
+
+    transform-origin: center center;
+
+    will-change: left, top, transform;
+
+    z-index: 2;
+}
+
+/* =========================================
+   EARTH-LIKE MOVING SURFACE
+   ========================================= */
+
+.orb-surface {
+    position: absolute;
+
+    inset: -20%;
+
+    width: 140%;
+    height: 140%;
+
+    border-radius: 50%;
+
+    background:
+        repeating-linear-gradient(
+            90deg,
+            transparent 0px,
+            transparent 18px,
+            var(--surface-light) 19px,
+            transparent 31px
+        ),
+        repeating-linear-gradient(
+            20deg,
+            transparent 0px,
+            transparent 24px,
+            var(--surface-dark) 25px,
+            transparent 42px
+        );
+
+    opacity: 0.65;
+
+    /*
+       JavaScript moves this surface horizontally.
+       This creates the appearance of the orb
+       rotating around its own axis.
+    */
+
+    will-change: transform;
+}
+
+/* =========================================
+   TEXT
+   ========================================= */
+
+.orb-text {
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    z-index: 3;
+
+    pointer-events: none;
+}
+
+.orb-text span {
+    color: var(--orb-text);
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.45);
+}
+
+/* =========================================
+   MOVING LIGHT / GLOSS
+   ========================================= */
+
+.orb-shine {
+    position: absolute;
+
+    width: 65%;
+    height: 65%;
+
+    left: -15%;
+    top: -15%;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255, 255, 255, 0.55),
+            rgba(255, 255, 255, 0.15) 35%,
+            transparent 70%
+        );
+
+    pointer-events: none;
+
+    z-index: 4;
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .orb {
+        width: 110px;
+        height: 110px;
+    }
+
+    .orb-text span {
+        font-size: 15px;
+    }
+}
