@@ -28,7 +28,7 @@
     align-items: center;
     justify-content: center;
 
-    min-height: 400px;
+    min-height: 450px;
     padding: 40px;
 border: 5px solid red;
     background: var(--blue-light);
