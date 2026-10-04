@@ -1,86 +1,117 @@
+```html
 <section id="educator" class="section educator-section">
 
-     <div class="container">
+    <div class="container">
 
-          
+        <!-- SECTION HEADING -->
+        <div class="section-heading">
+            <p class="eyebrow">Meet the Educator</p>
+            <h2>
+                Learn from an
+                <span>Experienced Educator</span>
+            </h2>
+        </div>
 
-                <div class="section-heading">
-                    <p class="eyebrow">Meet the Educator</p>                    
+
+        <!-- EDUCATOR CARD -->
+        <article class="educator-card">
+
+            <!-- PROFILE IMAGE -->
+            <div class="educator-image">
+
+                <svg
+                    class="educator-profile"
+                    viewBox="0 0 200 200"
+                    role="img"
+                    aria-label="Portrait of Taniya Withanage"
+                >
+
+                    <defs>
+                        <clipPath id="educatorProfileClip">
+                            <circle
+                                cx="100"
+                                cy="100"
+                                r="95"
+                            />
+                        </clipPath>
+                    </defs>
+
+                    <image
+                        href="images/profiletr.png"
+                        x="0"
+                        y="0"
+                        width="200"
+                        height="200"
+                        preserveAspectRatio="xMidYMid slice"
+                        clip-path="url(#educatorProfileClip)"
+                    />
+
+                    <circle
+                        class="educator-profile-border"
+                        cx="100"
+                        cy="100"
+                        r="95"
+                    />
+
+                </svg>
+
+            </div>
+
+
+            <!-- EDUCATOR INFORMATION -->
+            <div class="educator-info">
+
+                <p class="educator-role">
+                    English & Communication Educator
+                </p>
+
+                <h3>Taniya Withanage</h3>
+
+                <p class="qualification">
+                    BA (Hons) in English,
+                    University of Peradeniya
+                    <br>
+                    ACG, CL
+                </p>
+
+                <div class="educator-description">
+
+                    <p>
+                        An educator with over 20 years of teaching
+                        experience at a leading international school.
+                    </p>
+
+                    <p>
+                        Recipient of the Advanced Communicator Gold
+                        and Leadership Awards from Toastmasters
+                        International.
+                    </p>
+
                 </div>
 
-          
 
-                <div class="educator-card">   
-               
-                   <div class="educator-image">
-     
-                       <div class="educator-placeholder">
-     
-                           <svg viewBox="0 0 200 200" aria-hidden="true"> 
+                <!-- ACHIEVEMENTS -->
+                <div class="educator-achievements">
 
-                           <!-- PROFILE CLIP -->
-                           <defs>
-                           <clipPath id="profileClip">
-                           <circle cx="100" cy="100" r="95"/>
-                           </clipPath>
-                           </defs>
-
-                           <!-- PROFILE -->
-                           <image href="images/profiletr.png" x="1" y="1" width="190" height="190" preserveAspectRatio="xMidYMid slice" clip-path="url(#profileClip)"/>
-
-                           <!-- WHITE BORDER -->
-                          <circle cx="100" cy="100" r="95" fill="none" stroke="#ffffff" stroke-width="4"/>
-
-                         </svg>
-     
-                     </div>
-
-                 </div>
-
-
-            
-            
-                    <div class="educator-info">
-
-                        <h3>Taniya Withanage</h3>
-
-                        <p class="qualification">
-                            BA (Hons) in English,
-                            University of Peradeniya<br>
-                            ACG, CL
-                        </p>
-
-                        <p>
-                            An educator with 20+ years of teaching experience
-                            at a leading international school.
-                        </p>
-
-                        <p>
-                            Recipient of the Advanced Communicator Gold and
-                            Leadership Awards from Toastmasters International.
-                        </p>
-
-                        <div class="awards">
-
-                            <span class="award">
-                                20+ Years<br>
-                                <small>Teaching Experience</small>
-                            </span>
-
-                            <span class="award">
-                                ACG, CL<br>
-                                <small>Toastmasters</small>
-                            </span>
-                        </div>
+                    <div class="educator-achievement">
+                        <strong>20+</strong>
+                        <span>Years</span>
+                        <small>Teaching Experience</small>
                     </div>
 
-            
-
-
-                 
+                    <div class="educator-achievement">
+                        <strong>ACG, CL</strong>
+                        <span>Toastmasters</span>
+                        <small>International Awards</small>
+                    </div>
 
                 </div>
 
             </div>
 
-        </section>
+        </article>
+
+    </div>
+
+</section>
+```
