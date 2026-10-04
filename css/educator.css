@@ -12,15 +12,13 @@
     grid-template-columns: 0.7fr 1.3fr;
     align-items: center;
 
-    max-width: 950px;
+    max-width: 900px;
     margin: auto;
 
     overflow: hidden;
 
-    background: var(--off-white);
-    border: 1px solid var(--border);
+    background: var(--orange-light);
     border-radius: var(--radius);
-
     box-shadow: var(--shadow);
 }
 
@@ -30,7 +28,7 @@
     justify-content: center;
 
     min-height: 400px;
-    padding: 40px;
+    padding: 30px;
 
     background: var(--blue-light);
    z-index: 2;
@@ -41,7 +39,7 @@
 }
 
 .educator-info {
-    padding: 55px;
+    padding: 30px;
 }
 
 .educator-info h3 {
