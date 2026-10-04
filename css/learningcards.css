@@ -54,3 +54,204 @@
     margin: 0 auto;
     width: min(90%, 200px);
 }
+
+
+
+/*=========*/
+
+.learning-grid {
+display: grid;
+
+
+grid-template-columns: repeat(4, 1fr);
+
+gap: 25px;
+
+width: 100%;
+
+
+}
+
+/* =========================
+CARD
+========================= */
+
+.learning-card {
+display: flex;
+flex-direction: column;
+
+
+overflow: hidden;
+
+background: #ffffff;
+
+border-radius: 22px;
+
+border: 1px solid #e2e7ee;
+
+box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.08);
+
+transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+
+}
+
+/* =========================
+IMAGE AREA
+========================= */
+
+.learning-image {
+display: flex;
+
+
+justify-content: center;
+align-items: center;
+
+min-height: 230px;
+
+padding: 25px;
+
+background: #f5f8fc;
+
+
+}
+
+/* Image */
+.icon-cards {
+display: block;
+
+
+width: min(100%, 210px);
+
+height: auto;
+
+object-fit: contain;
+
+
+}
+
+/* =========================
+DESCRIPTION AREA
+========================= */
+
+.learning-description {
+display: flex;
+
+
+align-items: center;
+justify-content: center;
+
+min-height: 150px;
+
+padding: 25px;
+
+text-align: center;
+
+border-top: 4px solid #ffffff;
+
+
+}
+
+.learning-description p {
+margin: 0;
+
+
+color: #062b63;
+
+font-size: 0.95rem;
+
+line-height: 1.6;
+
+font-weight: 600;
+
+
+}
+
+/* =========================
+DESCRIPTION COLOURS
+========================= */
+
+/* Public Speaking */
+.learning-description-1 {
+background: #fff4d6;
+}
+
+/* Creative Writing */
+.learning-description-2 {
+background: #eaf4ff;
+}
+
+/* Grammar */
+.learning-description-3 {
+background: #edf8ef;
+}
+
+/* Spoken English */
+.learning-description-4 {
+background: #f5edff;
+}
+
+/* =========================
+HOVER
+========================= */
+
+@media (hover: hover) {
+
+
+.learning-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.13);
+}
+
+
+}
+
+/* =========================
+TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+
+.learning-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.learning-image {
+    min-height: 220px;
+}
+
+
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+
+.learning-grid {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+}
+
+.learning-image {
+    min-height: 200px;
+}
+
+.learning-description {
+    min-height: 130px;
+
+    padding: 25px 30px;
+}
+
+
+}
+
