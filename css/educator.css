@@ -17,7 +17,7 @@
     overflow: hidden;
 
     background: var(--off-white);
-    border: 5px solid orange;
+    /*border: 5px solid orange;*/
     border-radius: var(--radius);
 
     box-shadow: var(--shadow);
@@ -30,13 +30,13 @@
 
     /*min-height: 450px;*/
     padding: 40px;
-border: 5px solid red;
+/*border: 5px solid red;*/
     background: var(--blue-light);
 }
 
 .educator-placeholder {
     width: min(100%, 280px);
-   border: 5px solid green;
+   /*border: 5px solid green;*/
 }
 
 .educator-info {
