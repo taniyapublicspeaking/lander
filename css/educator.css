@@ -3,7 +3,7 @@
 ========================================================= */
 
 .educator-section {
-    background: red;
+    background: var(--white);
 }
 
 .educator-card {
@@ -11,13 +11,15 @@
     grid-template-columns: 0.7fr 1.3fr;
     align-items: center;
 
-    max-width: 800px;
+    max-width: 950px;
     margin: auto;
 
     overflow: hidden;
 
-    background: var(--orange-light);
+    background: var(--off-white);
+    border: 1px solid var(--border);
     border-radius: var(--radius);
+
     box-shadow: var(--shadow);
 }
 
@@ -27,15 +29,17 @@
     justify-content: center;
 
     min-height: 400px;
-    padding: 30px;
+    padding: 40px;
 
-    background: yellow;
-   
+    background: var(--blue-light);
 }
 
+.educator-placeholder {
+    width: min(100%, 280px);
+}
 
 .educator-info {
-    padding: 30px;
+    padding: 55px;
 }
 
 .educator-info h3 {
