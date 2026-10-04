@@ -3,8 +3,7 @@
 ========================================================= */
 
 .educator-section {
-    background: var(--white);
-    position: relative; /* new line to support svg */
+    background: red;
 }
 
 .educator-card {
