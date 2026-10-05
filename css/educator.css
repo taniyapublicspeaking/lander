@@ -17,16 +17,12 @@
     display: grid;
     grid-template-columns: 0.7fr 1.3fr;
     align-items: center;
-
     max-width: 950px;
     margin: auto;
-
     overflow: hidden;
-
     background: var(--navy);
     border: 0px solid orange;
     border-radius: var(--radius);
-
     box-shadow: var(--shadow);
 }
 
@@ -37,7 +33,7 @@
     min-height: 100%;
     padding: 40px;
     background: var(--orange);
-   opacity: 0.8;
+    opacity: 0.5;
 }
 
 .educator-placeholder {
@@ -51,7 +47,6 @@
 
 .educator-info h3 {
     margin-bottom: 10px;
-
     color: var(--white);
     font-size: 2.3rem;
 }
@@ -70,12 +65,9 @@
 
 .award {
     padding: 13px 18px;
-
     color: var(--navy);
     background: var(--white);
-
     border-radius: var(--radius-small);
-
     font-weight: 900;
 }
 
