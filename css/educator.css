@@ -32,6 +32,9 @@
     border: 0px solid orange;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
+
+
+   
 }
 
 .educator-image {
@@ -40,7 +43,7 @@
     justify-content: center;
     min-height: 100%;
     padding: 40px;
-    background: var(--orange);
+   /* background: var(--orange);*/
    
 background-image: url("images/DotsOrange.svg");
     background-repeat: no-repeat;
