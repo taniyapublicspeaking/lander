@@ -13,6 +13,13 @@
     fill: transparent;   
 }
 
+.educator-back {
+    stroke-width: 4;
+    opacity: 0.8;
+    fill: var(--off-white);   
+}
+
+
 .educator-card {
     display: grid;
     grid-template-columns: 0.7fr 1.3fr;
