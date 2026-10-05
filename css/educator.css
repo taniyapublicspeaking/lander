@@ -16,7 +16,7 @@
 
     overflow: hidden;
 
-    background: var(--off-white);
+    background: var(--navy);
     border: 5px solid orange;
     border-radius: var(--radius);
 
@@ -46,7 +46,7 @@ min-height: 100%;
 .educator-info h3 {
     margin-bottom: 10px;
 
-    color: var(--navy);
+    color: var(--white);
     font-size: 2.3rem;
 }
 
