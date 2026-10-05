@@ -6,6 +6,10 @@
     background: var(--white);
 }
 
+.educator-border {
+    border: 4px solid var(--navy);
+}
+
 .educator-card {
     display: grid;
     grid-template-columns: 0.7fr 1.3fr;
@@ -17,7 +21,7 @@
     overflow: hidden;
 
     background: var(--navy);
-    border: 5px solid orange;
+    border: 0px solid orange;
     border-radius: var(--radius);
 
     box-shadow: var(--shadow);
