@@ -17,7 +17,8 @@
     display: grid;
     grid-template-columns: 0.7fr 1.3fr;
     align-items: center;
-    max-width: 950px;
+    max-width: 900px;
+    width: 100%;
     margin: auto;
     overflow: hidden;
     background: var(--navy);
@@ -33,7 +34,7 @@
     min-height: 100%;
     padding: 40px;
     background: var(--orange);
-    opacity: 0.5;
+    /*opacity: 0.5;*/
 }
 
 .educator-placeholder {
