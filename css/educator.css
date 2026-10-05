@@ -7,10 +7,10 @@
 }
 
 .educator-border {
-    fill: none;
     stroke: var(--navy);
     stroke-width: 4;
     opacity: 0.8;
+    fill: transparent;   
 }
 
 .educator-card {
