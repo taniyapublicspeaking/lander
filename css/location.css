@@ -5,7 +5,7 @@
 .location-section {
    
     padding: 0px 0;
-    color: var(--white);
+    color: var(--orange);
     background: var(--white);
    
 }
@@ -29,7 +29,7 @@
 
 
 .location-content h3 {
-    color: var(--yellow);
+    color: var(--navy);
     font-size: 1.7rem;
 }
 
@@ -42,11 +42,11 @@
 }
 
 .i-gploc2 {
-    max-width: 125px;
+    max-width: 90px;
     height: auto;
     display: block;
     margin: 0 auto;
-    width: min(90%, 125px);
+    width: min(90%, 90px);
 }
 
 .svg-borderloc {
