@@ -83,32 +83,59 @@ flex-wrap: wrap;
 margin-top: 40px;
 }
 
-.programme-point {
+.programme-point1 {
 width: 190px;
 aspect-ratio: 1 / 1;
-
-
 border-radius: 50%;
-
-background: #062b63;
+background: var(--orange-light);   
 color: #d4a017;
-
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-
 text-align: center;
-
 padding: 30px;
 box-sizing: border-box;
-
 flex-shrink: 0;
-
 box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-
-
 }
+
+
+
+.programme-point2 {
+width: 190px;
+aspect-ratio: 1 / 1;
+border-radius: 50%;
+background: var(--blue-light);   
+color: #d4a017;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 30px;
+box-sizing: border-box;
+flex-shrink: 0;
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.programme-point3 {
+width: 190px;
+aspect-ratio: 1 / 1;
+border-radius: 50%;
+background: var(--off-white);   
+color: #d4a017;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 30px;
+box-sizing: border-box;
+flex-shrink: 0;
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
 
 .programme-number {
 font-size: 1.5rem;
