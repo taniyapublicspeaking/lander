@@ -1,29 +1,31 @@
-/* ========================================
-   HERO
-======================================== */
+/* =====================================================
+   HERO SECTION
+===================================================== */
 
 .hero {
     position: relative;
     min-height: 680px;
+
     display: flex;
     align-items: center;
+
     overflow: hidden;
 
     background:
         linear-gradient(
-            135deg,
-            #eff6ff 0%,
+            120deg,
+            #eef6ff 0%,
             #ffffff 52%,
             #fff7ed 100%
         );
 }
 
 
-/* ========================================
+/* =====================================================
    HERO CONTAINER
-======================================== */
+===================================================== */
 
-.hero-container {
+.hero .container {
     position: relative;
     z-index: 2;
 
@@ -31,86 +33,61 @@
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: 1.05fr 0.95fr;
+    grid-template-columns: 1fr 0.9fr;
+
     align-items: center;
 
-    gap: 50px;
+    gap: 60px;
 
     padding: 80px 0;
 }
 
 
-/* ========================================
-   HERO CONTENT
-======================================== */
+/* =====================================================
+   HERO TEXT
+===================================================== */
 
 .hero-content {
-    max-width: 650px;
+    max-width: 620px;
 }
 
 
-/* Badge */
+/* Main heading */
 
-.hero-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 9px;
-
-    padding: 9px 16px;
-
-    margin-bottom: 24px;
-
-    border-radius: 50px;
-
-    background: rgba(255, 255, 255, 0.75);
-
-    border: 1px solid rgba(30, 60, 100, 0.08);
-
-    box-shadow:
-        0 8px 25px rgba(30, 60, 100, 0.07);
-
-    color: #183b68;
-
-    font-size: 0.85rem;
-    font-weight: 600;
-}
-
-
-/* Heading */
-
-.hero-title {
+.hero h1 {
     margin: 0;
-
-    max-width: 650px;
 
     color: #102f55;
 
     font-size: clamp(
-        2.8rem,
+        3rem,
         6vw,
         5rem
     );
 
-    line-height: 1.02;
+    line-height: 1.05;
 
     letter-spacing: -0.04em;
+
+    font-weight: 800;
 }
 
-.hero-title span {
-    display: block;
 
+/* Highlighted part */
+
+.hero h1 span {
     color: var(--orange, #f59e0b);
 }
 
 
-/* Description */
+/* Supporting text */
 
-.hero-text {
-    max-width: 570px;
+.hero p {
+    max-width: 560px;
 
-    margin: 25px 0 32px;
+    margin-top: 25px;
 
-    color: #52657d;
+    color: #53677f;
 
     font-size: 1.08rem;
 
@@ -118,26 +95,18 @@
 }
 
 
-/* ========================================
-   BUTTONS
-======================================== */
+/* =====================================================
+   HERO BUTTON
+===================================================== */
 
-.hero-actions {
-    display: flex;
-    align-items: center;
-
-    gap: 25px;
-
-    flex-wrap: wrap;
-}
-
-
-.hero-btn {
+.hero .btn {
     display: inline-flex;
     align-items: center;
-    gap: 12px;
+    justify-content: center;
 
-    padding: 15px 25px;
+    margin-top: 28px;
+
+    padding: 14px 26px;
 
     border-radius: 50px;
 
@@ -150,82 +119,24 @@
     font-weight: 700;
 
     box-shadow:
-        0 12px 25px rgba(16, 47, 85, 0.22);
+        0 10px 25px rgba(16, 47, 85, 0.18);
 
     transition:
         transform 0.3s ease,
         box-shadow 0.3s ease;
 }
 
-
-.hero-btn:hover {
+.hero .btn:hover {
     transform: translateY(-3px);
 
     box-shadow:
-        0 16px 30px rgba(16, 47, 85, 0.28);
+        0 15px 30px rgba(16, 47, 85, 0.25);
 }
 
 
-.hero-btn span {
-    font-size: 1.2rem;
-
-    transition:
-        transform 0.3s ease;
-}
-
-
-.hero-btn:hover span {
-    transform: translateX(4px);
-}
-
-
-.hero-link {
-    color: #183b68;
-
-    text-decoration: none;
-
-    font-weight: 600;
-}
-
-
-.hero-link span {
-    margin-left: 6px;
-}
-
-
-/* ========================================
-   SKILLS
-======================================== */
-
-.hero-skills {
-    display: flex;
-
-    flex-wrap: wrap;
-
-    gap: 10px;
-
-    margin-top: 30px;
-}
-
-
-.hero-skills span {
-    padding: 7px 13px;
-
-    border-radius: 50px;
-
-    background: rgba(255, 255, 255, 0.65);
-
-    color: #49617b;
-
-    font-size: 0.82rem;
-
-    font-weight: 600;
-}
-
-
-/* ========================================
-   HERO VISUAL
-======================================== */
+/* =====================================================
+   HERO IMAGE AREA
+===================================================== */
 
 .hero-visual {
     position: relative;
@@ -233,121 +144,112 @@
     min-height: 500px;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 }
 
 
-/* Large decorative circle */
+/* =====================================================
+   LARGE SOFT CIRCLE
+===================================================== */
 
-.hero-circle {
+.hero-visual::before {
+    content: "";
+
     position: absolute;
 
-    width: min(430px, 80vw);
-    aspect-ratio: 1;
+    width: 430px;
+    height: 430px;
 
     border-radius: 50%;
 
     background:
         linear-gradient(
             135deg,
-            rgba(79, 172, 254, 0.25),
-            rgba(255, 166, 80, 0.20)
+            rgba(79, 172, 254, 0.18),
+            rgba(255, 166, 80, 0.15)
         );
 
-    border:
-        1px solid rgba(255, 255, 255, 0.8);
-
     box-shadow:
-        inset 0 0 50px rgba(255, 255, 255, 0.6),
-        0 25px 70px rgba(50, 90, 130, 0.12);
+        inset 0 0 50px rgba(255, 255, 255, 0.8);
 
-    animation: heroPulse 7s ease-in-out infinite;
+    animation:
+        hero-breathe 8s ease-in-out infinite;
 }
 
 
-/* Profile */
+/* =====================================================
+   IMAGE
+===================================================== */
 
-.hero-image {
+.hero-visual img {
     position: relative;
-
-    width: min(360px, 70vw);
-    aspect-ratio: 1;
-
-    border-radius: 50%;
-
-    overflow: hidden;
-
-    border: 8px solid rgba(255, 255, 255, 0.9);
-
-    box-shadow:
-        0 25px 60px rgba(30, 60, 100, 0.18);
-
-    z-index: 2;
-}
-
-
-.hero-image img {
-    width: 100%;
-    height: 100%;
-
-    display: block;
-
-    object-fit: cover;
-}
-
-
-/* ========================================
-   FLOATING CARD
-======================================== */
-
-.hero-floating-card {
-    position: absolute;
-
-    right: 0;
-    bottom: 45px;
 
     z-index: 3;
 
-    display: flex;
-    flex-direction: column;
+    width: min(370px, 75vw);
+    height: min(370px, 75vw);
 
-    padding: 16px 20px;
+    object-fit: cover;
 
-    border-radius: 18px;
+    border-radius: 50%;
 
-    background: rgba(255, 255, 255, 0.88);
-
-    backdrop-filter: blur(12px);
+    border: 7px solid rgba(255, 255, 255, 0.95);
 
     box-shadow:
-        0 15px 40px rgba(30, 60, 100, 0.13);
+        0 25px 55px rgba(31, 65, 100, 0.16);
+}
+
+
+/* =====================================================
+   DECORATIVE RING 1
+===================================================== */
+
+.hero-visual::after {
+    content: "";
+
+    position: absolute;
+
+    width: 455px;
+    height: 455px;
+
+    border-radius: 50%;
+
+    border:
+        2px solid rgba(245, 158, 11, 0.25);
+
+    transform: rotate(-20deg);
 
     animation:
-        heroFloat 5s ease-in-out infinite;
+        hero-ring 25s linear infinite;
 }
 
 
-.hero-floating-card strong {
-    color: #102f55;
+/* =====================================================
+   OPTIONAL SECOND RING
+===================================================== */
 
-    font-size: 0.95rem;
+.hero-ring {
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    border-radius: 50%;
+
+    border:
+        2px solid rgba(79, 172, 254, 0.18);
+
+    z-index: 1;
+
+    animation:
+        hero-ring-reverse 32s linear infinite;
 }
 
 
-.hero-floating-card span {
-    margin-top: 3px;
-
-    color: #718096;
-
-    font-size: 0.78rem;
-}
-
-
-/* ========================================
-   BACKGROUND DECORATION
-======================================== */
+/* =====================================================
+   BACKGROUND DECORATIVE ORBS
+===================================================== */
 
 .hero-bg {
     position: absolute;
@@ -362,110 +264,74 @@
 }
 
 
-.hero-orb {
+.hero-bg .shape {
     position: absolute;
 
     display: block;
 
     border-radius: 50%;
 
-    filter: blur(2px);
-
-    opacity: 0.45;
+    pointer-events: none;
 }
 
 
-.hero-orb-1 {
-    width: 240px;
-    height: 240px;
+.hero-bg .shape-1 {
+    width: 230px;
+    height: 230px;
 
-    top: -80px;
+    top: -90px;
     left: -70px;
 
-    background: #4facfe;
+    background: rgba(79, 172, 254, 0.22);
+
+    filter: blur(3px);
 
     animation:
-        heroFloat1 12s ease-in-out infinite;
+        hero-shape-1 12s ease-in-out infinite;
 }
 
 
-.hero-orb-2 {
-    width: 200px;
-    height: 200px;
+.hero-bg .shape-2 {
+    width: 190px;
+    height: 190px;
 
     right: -60px;
-    bottom: -60px;
+    bottom: -70px;
 
-    background: #ffd19a;
+    background: rgba(245, 158, 11, 0.18);
+
+    filter: blur(3px);
 
     animation:
-        heroFloat2 14s ease-in-out infinite;
+        hero-shape-2 14s ease-in-out infinite;
 }
 
 
-/* Ring */
+.hero-bg .shape-3 {
+    width: 100px;
+    height: 100px;
 
-.hero-ring {
-    position: absolute;
+    right: 15%;
+    top: 12%;
 
-    width: 280px;
-    height: 280px;
+    border:
+        2px solid rgba(79, 172, 254, 0.15);
 
-    right: 8%;
-    top: 8%;
-
-    border: 2px solid rgba(245, 158, 11, 0.18);
-
-    border-radius: 50%;
+    background: transparent;
 
     animation:
-        heroRotate 25s linear infinite;
+        hero-shape-3 10s ease-in-out infinite;
 }
 
 
-/* ========================================
+/* =====================================================
    ANIMATIONS
-======================================== */
+===================================================== */
 
-@keyframes heroFloat1 {
+@keyframes hero-breathe {
 
-    0%, 100% {
-        transform: translate(0, 0);
-    }
-
-    50% {
-        transform: translate(40px, 30px);
-    }
-}
-
-
-@keyframes heroFloat2 {
-
-    0%, 100% {
-        transform: translate(0, 0);
-    }
-
-    50% {
-        transform: translate(-35px, -25px);
-    }
-}
-
-
-@keyframes heroFloat {
-
-    0%, 100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-10px);
-    }
-}
-
-
-@keyframes heroPulse {
-
-    0%, 100% {
+    0%,
+    100% {
         transform: scale(1);
     }
 
@@ -475,7 +341,7 @@
 }
 
 
-@keyframes heroRotate {
+@keyframes hero-ring {
 
     from {
         transform: rotate(0deg);
@@ -487,93 +353,146 @@
 }
 
 
-/* ========================================
-   MOBILE
-======================================== */
+@keyframes hero-ring-reverse {
 
-@media (max-width: 800px) {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+
+@keyframes hero-shape-1 {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(35px, 25px);
+    }
+}
+
+
+@keyframes hero-shape-2 {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-30px, -25px);
+    }
+}
+
+
+@keyframes hero-shape-3 {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(20px) rotate(180deg);
+    }
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
 
     .hero {
         min-height: auto;
     }
 
-    .hero-container {
+    .hero .container {
         grid-template-columns: 1fr;
 
         text-align: center;
 
-        padding: 65px 0 70px;
+        gap: 45px;
 
-        gap: 40px;
+        padding:
+            70px 0
+            80px;
     }
 
     .hero-content {
+        max-width: 700px;
+
         margin: 0 auto;
     }
 
-    .hero-title {
-        font-size: clamp(
-            2.5rem,
-            11vw,
-            4rem
-        );
-    }
-
-    .hero-text {
+    .hero p {
         margin-left: auto;
         margin-right: auto;
     }
 
-    .hero-actions {
-        justify-content: center;
-    }
-
-    .hero-skills {
-        justify-content: center;
-    }
-
     .hero-visual {
-        min-height: 400px;
-    }
-
-    .hero-floating-card {
-        right: 5%;
-        bottom: 20px;
+        min-height: 430px;
     }
 }
 
 
-@media (max-width: 480px) {
+/* =====================================================
+   MOBILE
+===================================================== */
 
-    .hero-container {
+@media (max-width: 600px) {
+
+    .hero .container {
         width: 90%;
+
+        padding:
+            55px 0
+            65px;
     }
 
-    .hero-badge {
-        font-size: 0.75rem;
+    .hero h1 {
+        font-size:
+            clamp(
+                2.5rem,
+                12vw,
+                3.6rem
+            );
     }
 
-    .hero-title {
-        font-size: 2.65rem;
-    }
+    .hero p {
+        font-size: 1rem;
 
-    .hero-text {
-        font-size: 0.98rem;
+        line-height: 1.65;
     }
 
     .hero-visual {
-        min-height: 330px;
+        min-height: 350px;
     }
 
-    .hero-circle {
+    .hero-visual::before {
         width: 300px;
+        height: 300px;
     }
 
-    .hero-image {
+    .hero-visual::after {
+        width: 325px;
+        height: 325px;
+    }
+
+    .hero-ring {
+        width: 350px;
+        height: 350px;
+    }
+
+    .hero-visual img {
         width: 260px;
-    }
-
-    .hero-floating-card {
-        padding: 12px 15px;
+        height: 260px;
     }
 }
