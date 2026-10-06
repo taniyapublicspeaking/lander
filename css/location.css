@@ -29,16 +29,18 @@
 
 
 .location-content h3 {
-    color: var(--navy);
+    color: var(--blue);
     font-size: 1.7rem;
 }
 
 .location-content p {
-    color: rgba(255, 255, 255, 0.72);
+    /*color: rgba(255, 255, 255, 0.72);*/
+   color: var(--orange);
 }
 
 .location-address {
     font-size: 1rem;
+   color: var(--orange);
 }
 
 .i-gploc2 {
