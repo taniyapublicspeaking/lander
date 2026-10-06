@@ -1,0 +1,165 @@
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    position: relative;
+    min-height: 500px;   
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background:
+        linear-gradient(
+            135deg,
+            #eff6ff 0%,
+            #ffffff 55%,
+            #fff7ed 100%
+        );
+
+  /*border: 2px solid red;*/
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;   
+    gap: 30px;
+    padding-top: 90px;
+   
+    /*z-index: 2;   */
+   /*border: 2px solid green;*/
+}
+
+
+.hero-copy {   
+   position: relative; /*new*/
+   max-width: 700px; /*680px;*/
+   padding-top: 1px;
+   padding-bottom: 1px;
+
+  /*border: 2px solid orange;*/
+
+}
+
+.hero-visual {
+    position: relative;
+}
+
+.hero-copy h1 {
+    margin-bottom: 25px;
+    color: var(--navy);
+}
+
+.hero-copy h1 span {
+    color: var(--orange);
+}
+
+.hero-age {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    color: var(--navy);
+    background: var(--white);
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.06);
+}
+
+.hero-description {
+    max-width: 580px;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.i-gpcw {
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    width: min(90%, 350px);
+}
+
+
+
+.animated-bg {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    background: transparent;
+    z-index: 0;
+}
+
+
+.shape {
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    filter: blur(2px);
+    opacity: 0.5;
+}
+
+
+.shape-1 {
+    width: 250px;
+    height: 250px;
+    background: #4facfe;
+    top: -70px;
+    left: -60px;
+    animation: float1 10s ease-in-out infinite;
+}
+
+
+.shape-2 {
+    width: 200px;
+    height: 200px;
+    background: var(--orange-light);
+    right: -50px;
+    bottom: -40px;
+    animation: float2 12s ease-in-out infinite;
+}
+
+
+.shape-3 {
+    width: 150px;
+    height: 150px;
+    background: var(--off-white);
+    right: 10%;
+    top: 10%;
+    animation: float3 8s ease-in-out infinite;
+}
+
+
+@keyframes float1 {
+    0%,100% {
+        transform: translate(0, 0) scale(0.8);
+       background-color: var(--off-white);
+    }
+
+    50% {
+        transform: translate(80px, 50px) scale(1.5);
+       background-color: var(--orange-light);
+    }  
+   
+}
+
+@keyframes float2 {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate(-70px, -60px) scale(1.15);
+    }
+}
+
+@keyframes float3 {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate(-50px, 70px) scale(1.3);
+    }
+}
