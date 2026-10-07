@@ -80,9 +80,7 @@
 
 .hero-title {
     margin: 0;
-
     max-width: 650px;
-
     color: #102f55;
 
     font-size: clamp(
@@ -92,136 +90,35 @@
     );
 
     line-height: 1.02;
-
     letter-spacing: -0.04em;
 }
 
 .hero-title span {
     display: block;
-
     color: var(--orange, #f59e0b);
 }
 
 
 /* Description */
 
-.hero-text {
-    max-width: 570px;
-
-    margin: 25px 0 32px;
-
-    color: #52657d;
-
-    font-size: 1.08rem;
-
-    line-height: 1.75;
-}
-
-
-/* ========================================
-   BUTTONS
-======================================== */
-
-.hero-actions {
-    display: flex;
-    align-items: center;
-
-    gap: 25px;
-
-    flex-wrap: wrap;
-}
-
-
-.hero-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-
-    padding: 15px 25px;
-
-    border-radius: 50px;
-
-    background: #102f55;
-
-    color: #ffffff;
-
-    text-decoration: none;
-
+.hero-age {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    color: var(--navy);
+    background: var(--white);
+    border-radius: 999px;
+    font-size: 0.9rem;
     font-weight: 700;
-
     box-shadow:
-        0 12px 25px rgba(16, 47, 85, 0.22);
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+        0 8px 25px rgba(15, 23, 42, 0.06);
 }
 
-
-.hero-btn:hover {
-    transform: translateY(-3px);
-
-    box-shadow:
-        0 16px 30px rgba(16, 47, 85, 0.28);
+.hero-description {
+    max-width: 580px;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
 }
-
-
-.hero-btn span {
-    font-size: 1.2rem;
-
-    transition:
-        transform 0.3s ease;
-}
-
-
-.hero-btn:hover span {
-    transform: translateX(4px);
-}
-
-
-.hero-link {
-    color: #183b68;
-
-    text-decoration: none;
-
-    font-weight: 600;
-}
-
-
-.hero-link span {
-    margin-left: 6px;
-}
-
-
-/* ========================================
-   SKILLS
-======================================== */
-
-.hero-skills {
-    display: flex;
-
-    flex-wrap: wrap;
-
-    gap: 10px;
-
-    margin-top: 30px;
-}
-
-
-.hero-skills span {
-    padding: 7px 13px;
-
-    border-radius: 50px;
-
-    background: rgba(255, 255, 255, 0.65);
-
-    color: #49617b;
-
-    font-size: 0.82rem;
-
-    font-weight: 600;
-}
-
 
 /* ========================================
    HERO VISUAL
@@ -229,11 +126,8 @@
 
 .hero-visual {
     position: relative;
-
     min-height: 500px;
-
     display: flex;
-
     align-items: center;
     justify-content: center;
 }
@@ -271,19 +165,13 @@
 
 .hero-image {
     position: relative;
-
     width: min(360px, 70vw);
     aspect-ratio: 1;
-
     border-radius: 50%;
-
     overflow: hidden;
-
     border: 8px solid rgba(255, 255, 255, 0.9);
-
     box-shadow:
         0 25px 60px rgba(30, 60, 100, 0.18);
-
     z-index: 2;
 }
 
@@ -291,59 +179,9 @@
 .hero-image img {
     width: 100%;
     height: 100%;
-
     display: block;
-
     object-fit: cover;
 }
-
-
-/* ========================================
-   FLOATING CARD
-======================================== */
-
-.hero-floating-card {
-    position: absolute;
-
-    right: 0;
-    bottom: 45px;
-
-    z-index: 3;
-
-    display: flex;
-    flex-direction: column;
-
-    padding: 16px 20px;
-
-    border-radius: 18px;
-
-    background: rgba(255, 255, 255, 0.88);
-
-    backdrop-filter: blur(12px);
-
-    box-shadow:
-        0 15px 40px rgba(30, 60, 100, 0.13);
-
-    animation:
-        heroFloat 5s ease-in-out infinite;
-}
-
-
-.hero-floating-card strong {
-    color: #102f55;
-
-    font-size: 0.95rem;
-}
-
-
-.hero-floating-card span {
-    margin-top: 3px;
-
-    color: #718096;
-
-    font-size: 0.78rem;
-}
-
 
 /* ========================================
    BACKGROUND DECORATION
