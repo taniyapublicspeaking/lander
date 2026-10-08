@@ -463,7 +463,7 @@
     font-weight: 700;
     line-height: 1.2;
 
-    color: #183b75;
+    color: red; /*#183b75;*/
 
     pointer-events: none;
 
