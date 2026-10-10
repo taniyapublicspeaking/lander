@@ -1,76 +1,64 @@
-/* =========================================
-   HERO SMART SCREEN
-   ========================================= */
+/* =================================
+   SMOOTH BACKGROUND TRANSITIONS
+   ================================= */
 
-.hero-visual {
+:root {
+    --bg-blue: #eff6ff;
+    --bg-white: #ffffff;
+    --bg-orange: #fff7ed;
+    --bg-orange-light: #fffaf5;
+}
+
+/* Common section settings */
+.section {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    isolation: isolate;
+    overflow: hidden;
 }
 
-
-/* Hero image */
-
-.hero-visual img {
-    display: block;
-    width: 100%;
-    height: auto;
+/* Hero section */
+.hero {
+    background: linear-gradient(
+        180deg,
+        var(--bg-blue) 0%,
+        var(--bg-white) 85%,
+        var(--bg-white) 100%
+    );
 }
 
-
-/* Text displayed on the smart screen */
-
-.smart-screen-text {
-    position: absolute;
-
-    /*
-       Adjust these values to match
-       the actual screen in heroscreen.webp
-    */
-    top: 43%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-
-    width: 42%;
-
-    text-align: center;
-
-    font-family: Arial, sans-serif;
-    font-size: clamp(11px, 1.6vw, 24px);
-    font-weight: 700;
-    line-height: 1.2;
-
-    color: red; /*#183b75;*/
-
-    pointer-events: none;
-
-    opacity: 1;
-
-    transition:
-        opacity 0.8s ease,
-        transform 0.8s ease;
+/* Programme section */
+.programme-section {
+    background: linear-gradient(
+        180deg,
+        var(--bg-white) 0%,
+        var(--bg-white) 15%,
+        var(--bg-blue) 100%
+    );
 }
 
-
-/* Fade-out state */
-
-.smart-screen-text.fade-out {
-    opacity: 0;
-
-    transform:
-        translate(-50%, -50%)
-        translateY(8px);
+/* Learning section */
+.learning-section {
+    background: linear-gradient(
+        180deg,
+        var(--bg-blue) 0%,
+        var(--bg-white) 100%
+    );
 }
 
+/* Educator section */
+.educator-section {
+    background: linear-gradient(
+        180deg,
+        var(--bg-white) 0%,
+        var(--bg-orange-light) 100%
+    );
+}
 
-/* Fade-in state */
-
-.smart-screen-text.fade-in {
-    opacity: 1;
-
-    transform:
-        translate(-50%, -50%)
-        translateY(0);
+/* Registration section */
+.registration-section {
+    background: linear-gradient(
+        180deg,
+        var(--bg-orange-light) 0%,
+        var(--bg-orange) 100%
+    );
 }
