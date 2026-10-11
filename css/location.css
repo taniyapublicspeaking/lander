@@ -1,79 +1,194 @@
 /* =========================================================
-   LOCATION
+   LOCATION SECTION
 ========================================================= */
 
 .location-section {
-   
-    padding: 0px 0;
+    padding: 40px 20px;
     background: var(--white);
-   
 }
+
+
+/* Main container */
 
 .location-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    gap: 0px;
-}
-
-.location-content {
     width: 100%;
-    text-align: center;
-    display: flex;
-   flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   
-}
-
-
-.location-content h3 {
-    color: var(--orange);
-    font-size: 1.7rem;
-}
-
-.location-content p {
-    /*color: rgba(255, 255, 255, 0.72);*/
-   color: var(--navy);
-}
-
-.location-address {
-    font-size: 1rem;
-   color: var(--navy);
-}
-
-.i-gploc2 {
-    max-width: 125px;
-    height: auto;
-    display: block;
+    max-width: 1100px;
     margin: 0 auto;
-    width: min(90%, 125px);
 }
 
-.svg-borderloc {
-    border: 5px solid orange;
-}
+
+/* Location card */
 
 .location-box {
     width: 100%;
-    max-width: 900px
+    max-width: 900px;
     margin: 0 auto;
+    padding: 30px 20px;
+    box-sizing: border-box;
+
     text-align: center;
-    padding: 5px;
-    overflow: hidden;
+
     background: var(--orange-light);
-   /*
-    background:
-        linear-gradient(
-            135deg,
-            var(--orange-light),
-            #ffffff
-        );
-    */
     border-radius: var(--radius);
-align-items: center;
-border: 0px solid var(--yellow);
-/*border: 2px solid rgba(255, 140, 0, 0.3);*/
-box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-   
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Location content */
+
+.location-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    gap: 12px;
+
+    text-align: center;
+}
+
+
+/* Location heading */
+
+.location-content h3 {
+    margin: 0;
+
+    color: var(--orange);
+    font-size: 1.7rem;
+    line-height: 1.3;
+}
+
+
+/* Location text */
+
+.location-content p {
+    margin: 0;
+    color: var(--navy);
+}
+
+
+/* Google Maps link */
+
+.location-address {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.location-address a {
+    color: var(--navy);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.location-address a:hover {
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+
+/* Location SVG illustration */
+
+.location-map-icon {
+    display: block;
+
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+
+    margin: 0 auto;
+    overflow: visible;
+}
+
+
+/* Pulsating map pin */
+
+.map-pin-pulse {
+    fill: var(--orange);
+    stroke: var(--white);
+    stroke-width: 1.5;
+
+    transform-box: fill-box;
+    transform-origin: center;
+
+    animation: mapPinPulse 2s ease-out infinite;
+}
+
+
+/* Map pin animation */
+
+@keyframes mapPinPulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    70% {
+        transform: scale(1.7);
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .location-section {
+        padding: 30px 16px;
+    }
+
+    .location-box {
+        padding: 25px 18px;
+    }
+
+    .location-content {
+        gap: 10px;
+    }
+
+    .location-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .location-map-icon {
+        max-width: 220px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .location-section {
+        padding: 24px 12px;
+    }
+
+    .location-box {
+        padding: 22px 14px;
+        border-radius: var(--radius);
+    }
+
+    .location-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .location-address {
+        font-size: 0.9rem;
+    }
+
+    .location-map-icon {
+        max-width: 190px;
+    }
+
 }
