@@ -205,6 +205,104 @@
     font-weight: 600;
     line-height: 1.4;
 }
+/*dup=============*/
+
+/* =========================================================
+   EDUCATOR COLOUR SCHEME
+   Deeper Blue + Soft Orange
+========================================================= */
+
+.educator-section {
+    background: #FFFFFF;
+}
+
+/* Main educator card */
+
+.educator-card {
+    background: #D3E2F0;
+    border: 1px solid #C4D6E7;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+/* Portrait background */
+
+.educator-image {
+    background-color: #E2EDF7;
+
+    background-image:
+        url("images/DotsOrange.svg"),
+        linear-gradient(
+            135deg,
+            #E2EDF7 0%,
+            #F5F8FC 55%,
+            #FFF0DF 100%
+        );
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Educator name */
+
+.educator-info h3 {
+    color: #183B5B;
+}
+
+/* Qualifications */
+
+.educator-info .qualification {
+    color: #A95F24;
+    font-weight: 700;
+}
+
+/* Description */
+
+.educator-info > p:not(.qualification) {
+    color: #34495E;
+}
+
+/* Portrait background circle */
+
+.educator-back {
+    fill: #FFFFFF;
+    stroke: none;
+}
+
+/* Portrait border */
+
+.educator-border {
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 4;
+}
+
+/* Award badges */
+
+.award {
+    color: #183B5B;
+    background: #FFFFFF;
+    border: 1px solid #C4D6E7;
+    border-radius: var(--radius-small);
+}
+
+/* Award descriptions */
+
+.award small {
+    color: #52657A;
+}
+
+
+
+
+/*dup=============*/
+
+
+
+
+
+
 
 
 /* =========================================================
