@@ -154,11 +154,18 @@
    REGISTRATION BUTTON
 ========================================================= */
 
-.registration-content .btn {
-    display: inline-block;
+/* =========================================================
+   REGISTRATION BUTTON
+========================================================= */
+
+.registration-content a.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 
     margin: 0 auto;
-    box-sizing: border-box;
+    padding: 14px 28px;
 
     background: #287A8A;
     color: #FFFFFF;
@@ -166,43 +173,61 @@
     border: 1px solid #287A8A;
     border-radius: 10px;
 
+    box-shadow: 0 4px 10px rgba(35, 70, 90, 0.12);
+
     text-align: center;
     text-decoration: none;
 
     transition:
-        background-color 0.3s ease,
-        border-color 0.3s ease,
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+        background-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.25s ease;
 }
 
 
 /* Button arrow */
 
-.registration-content .btn span {
+.registration-content a.btn span {
     display: inline-block;
-    margin-left: 8px;
+    margin: 0;
 }
 
 
-/* Button hover */
+/* Hover */
 
-.registration-content .btn:hover {
+.registration-content a.btn:hover {
     background: #205F6B;
-    border-color: #205F6B;
+    color: #FFFFFF;
+
+    box-shadow: 0 6px 14px rgba(35, 70, 90, 0.18);
 
     transform: translateY(-2px);
-
-    box-shadow: 0 6px 16px rgba(40, 122, 138, 0.20);
 }
 
 
 /* Keyboard focus */
 
-.registration-content .btn:focus-visible {
+.registration-content a.btn:focus-visible {
     outline: 3px solid #D97745;
-    outline-offset: 4px;
+    outline-offset: 3px;
 }
+
+
+/* Remove hover movement for reduced-motion users */
+
+@media (prefers-reduced-motion: reduce) {
+    .registration-content a.btn {
+        transition: none;
+    }
+
+    .registration-content a.btn:hover {
+        transform: none;
+    }
+}
+
+
+
+
 
 
 /* =========================================================
