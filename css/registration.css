@@ -6,7 +6,7 @@
     width: 100%;
     padding: 45px 20px;
     box-sizing: border-box;
-    background: #ffffff;
+    background: #FFFFFF;
 }
 
 
@@ -28,19 +28,24 @@
 .registration-box {
     width: 100%;
     box-sizing: border-box;
+
+    margin: 0 auto;
     padding: 50px 45px;
 
     text-align: center;
+    overflow: hidden;
 
     background: linear-gradient(
         135deg,
-        var(--blue-light),
-        #ffffff
+        #F0F7FA 0%,
+        #F8FBFC 65%,
+        #FFFFFF 100%
     );
 
+    border: 1px solid #D5E6EC;
     border-radius: var(--radius);
 
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 30px rgba(35, 70, 90, 0.08);
 }
 
 
@@ -51,7 +56,9 @@
 .registration-content {
     width: 100%;
     max-width: 760px;
+
     margin: 0 auto;
+
     text-align: center;
 }
 
@@ -63,26 +70,35 @@
 .registration-content .eyebrow {
     margin: 0 0 12px;
     padding: 0;
+
+    color: #287A8A;
+
+    text-align: center;
 }
 
 
 /* =========================================================
-   HEADING
+   MAIN HEADING
 ========================================================= */
 
 .registration-content h2 {
     max-width: 700px;
+
     margin: 0 auto 20px;
     padding: 0;
 
-    color: var(--navy);
+    color: #23465A;
+
     text-align: center;
     line-height: 1.25;
 }
 
+
+/* Highlighted heading */
+
 .registration-content h2 span {
     display: inline;
-    color: var(--orange);
+    color: #D97745;
 }
 
 
@@ -102,22 +118,31 @@
 
 
 /* =========================================================
-   DESCRIPTION
+   INTRODUCTION AND DESCRIPTION
 ========================================================= */
 
 .registration-content p {
     max-width: 700px;
+
     margin-right: auto;
     margin-left: auto;
+
+    color: #425466;
 
     text-align: center;
     line-height: 1.7;
 }
 
+
+/* Introduction */
+
 .registration-content .registration-intro {
     margin-top: 0;
     margin-bottom: 10px;
 }
+
+
+/* Programme description */
 
 .registration-content .registration-description {
     margin-top: 0;
@@ -130,13 +155,53 @@
 ========================================================= */
 
 .registration-content .btn {
+    display: inline-block;
+
     margin: 0 auto;
     box-sizing: border-box;
+
+    background: #287A8A;
+    color: #FFFFFF;
+
+    border: 1px solid #287A8A;
+    border-radius: 10px;
+
+    text-align: center;
+    text-decoration: none;
+
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
+
+
+/* Button arrow */
 
 .registration-content .btn span {
     display: inline-block;
     margin-left: 8px;
+}
+
+
+/* Button hover */
+
+.registration-content .btn:hover {
+    background: #205F6B;
+    border-color: #205F6B;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 16px rgba(40, 122, 138, 0.20);
+}
+
+
+/* Keyboard focus */
+
+.registration-content .btn:focus-visible {
+    outline: 3px solid #D97745;
+    outline-offset: 4px;
 }
 
 
@@ -150,12 +215,21 @@
         padding: 35px 20px;
     }
 
+    .registration-container {
+        max-width: 100%;
+    }
+
     .registration-box {
         padding: 40px 30px;
     }
 
+    .registration-content {
+        max-width: 100%;
+    }
+
     .registration-content h2 {
         margin-bottom: 18px;
+        line-height: 1.3;
     }
 
     .i-gpconfi {
@@ -178,6 +252,7 @@
 
     .registration-box {
         padding: 30px 18px;
+
         border-radius: 18px;
     }
 
@@ -193,6 +268,7 @@
     .i-gpconfi {
         width: 100%;
         max-width: 340px;
+
         margin-bottom: 15px;
     }
 
@@ -206,6 +282,27 @@
 
     .registration-content .registration-description {
         margin-bottom: 22px;
+    }
+
+    .registration-content .btn {
+        max-width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .registration-content .btn {
+        transition: none;
+    }
+
+    .registration-content .btn:hover {
+        transform: none;
     }
 
 }
