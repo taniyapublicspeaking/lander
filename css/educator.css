@@ -217,3 +217,89 @@ color: #172B4D;
     }
 
 }
+
+
+
+/* =========================================================
+   EDUCATOR COLOUR SCHEME
+   Matched to the Hero Section
+========================================================= */
+
+.educator-section {
+    background: #FFFFFF;
+}
+
+/* Main Card */
+
+.educator-card {
+    background: #102F55;
+    border: 1px solid rgba(16, 47, 85, 0.08);
+    box-shadow: var(--shadow);
+}
+
+/* Portrait Background */
+
+.educator-image {
+    background-color: #EFF6FF;
+
+    background-image:
+        url("images/DotsOrange.svg"),
+        linear-gradient(
+            135deg,
+            #EFF6FF 0%,
+            #FFFFFF 55%,
+            #FFF7ED 100%
+        );
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Portrait Background Circle */
+
+.educator-back {
+    fill: #FFFFFF;
+}
+
+/* Portrait Border */
+
+.educator-border {
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 4;
+    opacity: 1;
+}
+
+/* Educator's Name */
+
+.educator-info h3 {
+    color: #FFFFFF;
+}
+
+/* Qualifications */
+
+.qualification {
+    color: #FFD19A;
+    font-weight: 700;
+}
+
+/* Description */
+
+.educator-info > p:not(.qualification) {
+    color: #FFFFFF;
+}
+
+/* Award Badges */
+
+.award {
+    color: #102F55;
+    background: #FFFFFF;
+}
+
+.award small {
+    color: #52657A;
+}
+
+
+
