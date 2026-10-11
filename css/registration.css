@@ -155,7 +155,7 @@
 ========================================================= */
 
 /* =========================================================
-   REGISTRATION BUTTON
+   REGISTRATION BUTTON — MATCH HERO BUTTON
 ========================================================= */
 
 .registration-content a.btn {
@@ -165,23 +165,24 @@
     gap: 10px;
 
     margin: 0 auto;
-    padding: 14px 28px;
+    padding: 14px 26px;
 
-    background: #287A8A;
+    background: #102F55;
     color: #FFFFFF;
 
-    border: 1px solid #287A8A;
-    border-radius: 10px;
+    border: none;
+    border-radius: 50px;
 
-    box-shadow: 0 4px 10px rgba(35, 70, 90, 0.12);
-
+    font-weight: 700;
     text-align: center;
     text-decoration: none;
 
+    box-shadow: 0 10px 25px rgba(16, 47, 85, 0.18);
+
     transition:
-        background-color 0.25s ease,
-        box-shadow 0.25s ease,
-        transform 0.25s ease;
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
 }
 
 
@@ -190,40 +191,56 @@
 .registration-content a.btn span {
     display: inline-block;
     margin: 0;
+    transition: transform 0.3s ease;
 }
 
 
-/* Hover */
+/* Hover effect */
 
 .registration-content a.btn:hover {
-    background: #205F6B;
+    background: #102F55;
     color: #FFFFFF;
 
-    box-shadow: 0 6px 14px rgba(35, 70, 90, 0.18);
+    transform: translateY(-3px);
 
-    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(16, 47, 85, 0.25);
 }
 
 
-/* Keyboard focus */
+/* Animate arrow on hover */
+
+.registration-content a.btn:hover span {
+    transform: translateX(4px);
+}
+
+
+/* Keyboard accessibility */
 
 .registration-content a.btn:focus-visible {
     outline: 3px solid #D97745;
-    outline-offset: 3px;
+    outline-offset: 4px;
 }
 
 
-/* Remove hover movement for reduced-motion users */
+/* Respect reduced-motion preferences */
 
 @media (prefers-reduced-motion: reduce) {
-    .registration-content a.btn {
+    .registration-content a.btn,
+    .registration-content a.btn span {
         transition: none;
     }
 
     .registration-content a.btn:hover {
         transform: none;
     }
+
+    .registration-content a.btn:hover span {
+        transform: none;
+    }
 }
+
+
+
 
 
 
