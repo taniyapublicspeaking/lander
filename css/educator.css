@@ -143,36 +143,32 @@
    RESPONSIVE LAYOUT
 ========================================================= */
 
-@media (max-width: 768px) {
+/* =========================================================
+   TABLET RESPONSIVE LAYOUT
+========================================================= */
 
-    .educator-section .section-heading {
-        margin-bottom: 24px;
-    }
+@media (min-width: 481px) and (max-width: 768px) {
 
     .educator-card {
-        grid-template-columns: 1fr;
-        max-width: 520px;
+        grid-template-columns: 0.7fr 1.3fr;
     }
 
     .educator-image {
-        padding: 30px 20px;
+        padding: 20px;
     }
 
     .educator-profile {
-        max-width: 240px;
+        width: 100%;
+        max-width: 180px;
+        height: auto;
     }
 
     .educator-info {
-        padding: 30px;
-        text-align: center;
+        padding: 25px;
     }
 
     .educator-info h3 {
-        font-size: 1.8rem;
-    }
-
-    .awards {
-        justify-content: center;
+        font-size: 1.7rem;
     }
 
 }
