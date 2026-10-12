@@ -3,7 +3,20 @@
 ========================================================= */
 
 .learn-section {
+    padding: 40px 0 !important;
+    margin: 0;
+
     background: var(--white);
+}
+
+
+/* =========================================================
+   SECTION CONTAINER
+========================================================= */
+
+.learn-section > .container {
+    width: 100%;
+    margin: 0 auto;
 }
 
 
@@ -12,17 +25,22 @@
 ========================================================= */
 
 .learn-heading {
-    margin: 0 0 40px;
+    margin: 0 0 28px;
+    padding: 0;
+
     text-align: center;
 }
 
 .learn-heading .eyebrow {
-    margin: 0 0 12px;
+    margin: 0 0 10px;
 }
 
 .learn-intro {
     max-width: 650px;
+
     margin: 0 auto;
+    padding: 0;
+
     line-height: 1.7;
 }
 
@@ -33,9 +51,14 @@
 
 .learning-grid {
     display: grid;
+
     grid-template-columns: repeat(4, minmax(0, 1fr));
+
     gap: 24px;
+
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -46,14 +69,19 @@
 .learning-card {
     display: flex;
     flex-direction: column;
+
     min-width: 0;
+    margin: 0;
+    padding: 0;
+
     overflow: hidden;
 
     background: var(--white);
+
     border: 1px solid var(--border);
     border-radius: var(--radius);
 
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
 
     transition:
         transform 0.3s ease,
@@ -67,17 +95,20 @@
 
 .learning-image {
     display: flex;
+
     align-items: center;
     justify-content: center;
 
-    min-height: 220px;
-    padding: 24px;
+    min-height: 190px;
+    padding: 18px;
 
     background: #f5f8fc;
 }
 
 
-/* Learning Images */
+/* =========================================================
+   LEARNING IMAGES
+========================================================= */
 
 .learning-icon {
     display: block;
@@ -101,8 +132,8 @@
     align-items: center;
     justify-content: center;
 
-    min-height: 150px;
-    padding: 24px;
+    min-height: 130px;
+    padding: 20px;
 
     text-align: center;
 
@@ -110,15 +141,19 @@
 }
 
 
-/* Description Text */
+/* =========================================================
+   DESCRIPTION TEXT
+========================================================= */
 
 .learning-description p {
     margin: 0;
+    padding: 0;
 
     color: #062b63;
+
     font-size: 0.95rem;
-    line-height: 1.65;
     font-weight: 600;
+    line-height: 1.6;
 }
 
 
@@ -161,9 +196,9 @@
 @media (hover: hover) {
 
     .learning-card:hover {
-        transform: translateY(-7px);
+        transform: translateY(-5px);
 
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.13);
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
     }
 
 }
@@ -175,13 +210,31 @@
 
 @media (max-width: 1000px) {
 
+    .learn-section {
+        padding: 32px 0 !important;
+    }
+
+    .learn-heading {
+        margin-bottom: 24px;
+    }
+
     .learning-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 24px;
+        gap: 20px;
     }
 
     .learning-image {
-        min-height: 210px;
+        min-height: 185px;
+        padding: 18px;
+    }
+
+    .learning-icon {
+        max-width: 200px;
+    }
+
+    .learning-description {
+        min-height: 120px;
+        padding: 18px;
     }
 
 }
@@ -193,27 +246,95 @@
 
 @media (max-width: 600px) {
 
+    .learn-section {
+        padding: 25px 0 !important;
+    }
+
     .learn-heading {
-        margin-bottom: 28px;
+        margin-bottom: 20px;
+    }
+
+    .learn-heading .eyebrow {
+        margin-bottom: 8px;
+    }
+
+    .learn-intro {
+        line-height: 1.6;
     }
 
     .learning-grid {
         grid-template-columns: minmax(0, 1fr);
-        gap: 20px;
+        gap: 18px;
     }
 
     .learning-image {
-        min-height: 200px;
-        padding: 20px;
+        min-height: 170px;
+        padding: 16px;
     }
 
     .learning-icon {
-        max-width: 200px;
+        max-width: 190px;
     }
 
     .learning-description {
         min-height: 0;
-        padding: 24px 26px;
+        padding: 18px 22px;
+    }
+
+    .learning-description p {
+        font-size: 0.92rem;
+        line-height: 1.6;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .learn-section {
+        padding: 20px 0 !important;
+    }
+
+    .learn-heading {
+        margin-bottom: 18px;
+    }
+
+    .learning-grid {
+        gap: 16px;
+    }
+
+    .learning-image {
+        min-height: 150px;
+        padding: 14px;
+    }
+
+    .learning-icon {
+        max-width: 170px;
+    }
+
+    .learning-description {
+        padding: 16px 18px;
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY: REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .learning-card {
+        transition: none;
+    }
+
+    .learning-card:hover {
+        transform: none;
     }
 
 }
