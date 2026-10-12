@@ -3,9 +3,14 @@
 ========================================================= */
 
 .contact-section {
-    background: var(--white);
+    /*background: var(--white);*/
     position: relative; /* new line to support svg */
-
+background: linear-gradient(
+        135deg,
+        #F0F7FA 0%,
+        #F8FBFC 65%,
+        #FFFFFF 100%
+    );
 }
 
 .contact-layout {
