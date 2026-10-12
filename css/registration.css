@@ -18,6 +18,14 @@
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
+
+   background: linear-gradient(
+        135deg,
+        #F0F7FA 0%,
+        #F8FBFC 65%,
+        #FFFFFF 100%
+    );
+
 }
 
 
