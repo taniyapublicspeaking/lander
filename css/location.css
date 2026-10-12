@@ -149,6 +149,21 @@
 
 }
 
+/*======/===========*/
+
+
+.location-content h2 {
+    color: #24476B;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.location-content h2 span {
+    display: inline-block;
+    color: #D97736;
+}
+
+
 
 /* =========================================================
    TABLET
