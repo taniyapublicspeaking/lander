@@ -99,3 +99,27 @@
 .contact-icon-whatsapp:hover {
     transform: scale(1.1);
 }
+
+.contact-box {
+    width: 100%;
+   max-width: 900px;
+    box-sizing: border-box;
+
+    margin: 0 auto;
+    padding: 50px 45px;
+
+    text-align: center;
+    overflow: hidden;
+
+    background: linear-gradient(
+        135deg,
+        #F0F7FA 0%,
+        #F8FBFC 65%,
+        #FFFFFF 100%
+    );
+
+    border: 1px solid #D5E6EC;
+    border-radius: var(--radius);
+
+    box-shadow: 0 10px 30px rgba(35, 70, 90, 0.08);
+}
