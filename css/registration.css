@@ -356,3 +356,65 @@
     }
 
 }
+
+/* ========================================
+   REGISTRATION SECTION
+   Match the educator card width
+======================================== */
+
+.registration-section {
+    width: 100%;
+    padding: 60px 20px;
+    box-sizing: border-box;
+}
+
+.registration-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.registration-box {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 50px 40px;
+    box-sizing: border-box;
+
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+/* Keep all child elements within the card */
+.registration-box *,
+.registration-container * {
+    box-sizing: border-box;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .registration-section {
+        padding: 50px 20px;
+    }
+
+    .registration-container {
+        max-width: 100%;
+    }
+
+    .registration-box {
+        padding: 40px 30px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .registration-section {
+        padding: 35px 16px;
+    }
+
+    .registration-box {
+        padding: 30px 20px;
+    }
+}
