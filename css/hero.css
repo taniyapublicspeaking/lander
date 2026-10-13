@@ -85,7 +85,12 @@
 
     line-height: 1.08;
     letter-spacing: -0.04em;
+
+font-family: 'Caveat', cursive;
+    font-weight: 700;
+   
 }
+
 
 .hero-title span {
     display: block;
