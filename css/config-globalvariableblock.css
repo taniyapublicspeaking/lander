@@ -35,13 +35,19 @@ button {
    GLOBAL VARIABLES
 ========================================================= */
 
+/* =========================================================
+   GLOBAL VARIABLES
+========================================================= */
+
 :root {
+
     /* Typography */
     --font-family: 'Poppins', sans-serif;
 
     /* Colours */
     --navy: #172554;
     --navy-dark: #0f172a;
+
     --blue: #2563eb;
     --blue-light: #dbeafe;
     --sky: #eff6ff;
@@ -78,22 +84,9 @@ body {
     font-family: var(--font-family);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
 button,
 input,
 textarea,
-select,
-label,
-small,
-strong,
-span,
-li {
-    font-family: inherit;
+select {
+    font: inherit;
 }
