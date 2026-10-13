@@ -1,130 +1,176 @@
-/* ========================================================
-   CONTACT
+/* =========================================================
+   CONTACT SECTION
 ========================================================= */
 
 .contact-section {
-    /*background: var(--white);*/
-    position: relative; /* new line to support svg */
-background: linear-gradient(
-        135deg,
-        #F0F7FA 0%,
-        #F8FBFC 65%,
-        #FFFFFF 100%
-    );
-}
-
-.contact-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 60px;
-}
-
-.contact-layout h2 {
-    color: var(--navy);
-}
-
-.contact-details {
-    display: grid;
-    gap: 15px;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-
-    padding: 20px;
-
-    border: 1px solid var(--border);
-    border-radius: var(--radius-small);
-
-    transition:
-        border-color 0.2s ease,
-        transform 0.2s ease;
-}
-
-.contact-item:hover {
-    border-color: var(--orange);
-    transform: translateX(5px);
-}
-
-.contact-icon {
-    display: grid;
-    place-items: center;
-
-    width: 50px;
-    height: 50px;
-
-    color: var(--white);
-    background: var(--navy);
-
-    border-radius: 50%;
-
-    font-weight: 900;
-}
-
-.contact-item small {
-    display: block;
-    color: var(--muted);
-}
-
-.contact-item strong {
-    display: block;
-    color: var(--navy);
-}
-
-/* =========================================================
-   MOBILE ICON
-========================================================= */
-
-.contact-icon-mobile {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: #007bff;
-}
-
-.contact-icon-mobile:hover {
-    transform: scale(1.1);
-}
-
-/* =========================================================
-   WHATSAPP ICON
-========================================================= */
-
-.contact-icon-whatsapp {
-    color: #25D366;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.2s ease;
-}
-
-.contact-icon-whatsapp:hover {
-    transform: scale(1.1);
-}
-
-.contact-box {
-    width: 100%;
-   max-width: 900px;
-    box-sizing: border-box;
-
-    margin: 0 auto;
-    padding: 50px 45px;
-
-    text-align: center;
-    overflow: hidden;
-
     background: linear-gradient(
         135deg,
         #F0F7FA 0%,
         #F8FBFC 65%,
         #FFFFFF 100%
     );
+}
 
-    border: 1px solid #D5E6EC;
-    border-radius: var(--radius);
 
-    box-shadow: 0 10px 30px rgba(35, 70, 90, 0.08);
+/* =========================================================
+   CONTACT LAYOUT
+========================================================= */
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+
+/* =========================================================
+   CONTACT CONTENT
+========================================================= */
+
+.contact-content h2 {
+    margin-bottom: 16px;
+    color: var(--navy);
+}
+
+.contact-content > p:last-child {
+    max-width: 480px;
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   CONTACT DETAILS
+========================================================= */
+
+.contact-details {
+    display: grid;
+    gap: 12px;
+}
+
+
+/* =========================================================
+   CONTACT ITEM
+========================================================= */
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    padding: 16px;
+
+    color: inherit;
+    text-decoration: none;
+
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-small);
+
+    transition:
+        border-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.contact-item:hover {
+    border-color: var(--orange);
+    transform: translateX(4px);
+    box-shadow: 0 5px 15px rgba(35, 70, 90, 0.08);
+}
+
+
+/* =========================================================
+   CONTACT ICON
+========================================================= */
+
+.contact-icon {
+    display: grid;
+    place-items: center;
+
+    flex: 0 0 46px;
+    width: 46px;
+    height: 46px;
+
+    color: #FFFFFF;
+    background: var(--navy);
+
+    border-radius: 50%;
+}
+
+.contact-icon svg {
+    display: block;
+    width: 22px;
+    height: 22px;
+}
+
+
+/* =========================================================
+   CONTACT TEXT
+========================================================= */
+
+.contact-text {
+    min-width: 0;
+}
+
+.contact-text small {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+.contact-text strong {
+    display: block;
+    color: var(--navy);
+    font-size: 1rem;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .contact-content > p:last-child {
+        max-width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .contact-layout {
+        gap: 20px;
+    }
+
+    .contact-details {
+        gap: 10px;
+    }
+
+    .contact-item {
+        gap: 12px;
+        padding: 14px;
+    }
+
+    .contact-icon {
+        flex-basis: 42px;
+        width: 42px;
+        height: 42px;
+    }
+
 }
