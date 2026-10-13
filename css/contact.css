@@ -3,6 +3,10 @@
 ========================================================= */
 
 .contact-section {
+
+padding-top: 40px;
+    padding-bottom: 40px;
+   
     background: linear-gradient(
         135deg,
         #F0F7FA 0%,
